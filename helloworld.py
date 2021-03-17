@@ -1,11 +1,13 @@
 import time
 from w1thermsensor import W1ThermSensor
 from datetime import datetime
+from flask import Flask
+app = Flask(__name__)
 
 sensor = W1ThermSensor() 
 
-while True:
+@app.route('/')
+def hello_world():
     temperature = sensor.get_temperature()
     timeNow = datetime.now().time().replace(microsecond=0)
-    print("At %s the temperature is %s celsius" % (timeNow, temperature))
-    time.sleep(30)
+    return"At %s the temperature is %s celsius" % (timeNow, temperature)
