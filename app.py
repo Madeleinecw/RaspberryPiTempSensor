@@ -3,8 +3,10 @@ from flask import Flask, render_template, url_for, copy_current_request_context
 from random import random
 from time import sleep
 from threading import Thread, Event
-from datetime import datetime 
+from datetime import date, datetime
 from w1thermsensor import W1ThermSensor
+from model.databasetemp import add_temp
+
 
 
 app = Flask(__name__)
@@ -13,10 +15,18 @@ app.config['DEBUG'] = True
 
 socketio = SocketIO(app, async_mode=None, logger=True, engineio_logger=True)
 
+
+
 sensor = W1ThermSensor() 
 thread= Thread()
 thread_stop_event = Event()
 
+
+def save_temp_to_database():
+        temp = sensor.get_temperature()
+        day = date.today()
+        time = datetime.now().time().replace(microsecond=0)
+        add_temp(temp, day, time)
 
 def send_time_and_temperature():
     print("getting the temperature")
@@ -28,7 +38,11 @@ def send_time_and_temperature():
         print(temperature)
         socketio.emit('newTemperature', {'temperature' : temperature}, namespace='/test')
         socketio.emit('newTime', {'time' : time}, namespace='/test')
-        socketio.sleep(1)
+        if timeNow.minute % 10 == 0:
+            save_temp_to_database() 
+        socketio.sleep(0.5)
+         
+
 
 @app.route('/')
 def index():
@@ -45,6 +59,7 @@ def test_connect():
     if not thread.isAlive():
         print("Starting Thread")
         thread = socketio.start_background_task(send_time_and_temperature)
+    
 
 @socketio.on('disconnect', namespace='/test')
 def test_disconnect():
