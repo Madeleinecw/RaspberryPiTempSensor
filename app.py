@@ -5,7 +5,7 @@ from time import sleep
 from threading import Thread, Event
 from datetime import date, datetime
 from w1thermsensor import W1ThermSensor
-from model.databasetemp import add_temp
+from model.databasetemp import add_temp, get_time_of_most_recent_temp
 
 
 
@@ -39,7 +39,7 @@ def send_time_and_temperature():
         socketio.emit('newTemperature', {'temperature' : temperature}, namespace='/test')
         socketio.emit('newTime', {'time' : time}, namespace='/test')
         
-        if (timeNow.minute % 10 == 0):
+        if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temp().minute):
             save_temp_to_database() 
         socketio.sleep(0.5)
          
