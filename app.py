@@ -38,7 +38,8 @@ def send_time_and_temperature():
         print(temperature)
         socketio.emit('newTemperature', {'temperature' : temperature}, namespace='/test')
         socketio.emit('newTime', {'time' : time}, namespace='/test')
-        if timeNow.minute % 10 == 0:
+        
+        if (timeNow.minute % 10 == 0):
             save_temp_to_database() 
         socketio.sleep(0.5)
          
