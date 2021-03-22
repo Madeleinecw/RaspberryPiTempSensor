@@ -24,9 +24,8 @@ thread_stop_event = Event()
 
 def save_temp_to_database():
         temp = sensor.get_temperature()
-        day = date.today()
-        time = datetime.now().time().replace(microsecond=0)
-        add_temp(temp, day, time)
+        timestamp = datetime.now().replace(microsecond=0)
+        add_temp(temp, timestamp)
 
 def send_time_and_temperature():
     print("getting the temperature")
@@ -34,8 +33,7 @@ def send_time_and_temperature():
         temperature = sensor.get_temperature()
         timeNow = datetime.now().time().replace(microsecond=0)
         time = str(timeNow)
-        print(time)
-        print(temperature)
+        # timestamp = datetime.now().replace(microsecond=0)
         socketio.emit('newTemperature', {'temperature' : temperature}, namespace='/test')
         socketio.emit('newTime', {'time' : time}, namespace='/test')
         

@@ -9,21 +9,21 @@ cur = conn.cursor()
 
 
 
-def add_temp(temp, date, time):
+def add_temp(temp, timestamp):
     query = """
     INSERT INTO
-        temperatures
+        temp
     VALUES
-        (DEFAULT, %s, %s, %s)
+        (DEFAULT, %s, %s)
     """
-    values = (temp, date, time)
+    values = (temp, timestamp)
     cur.execute(query, values)
     conn.commit()
 
 def get_time_of_most_recent_temp():
     query = """
-    SELECT time FROM 
-        temperatures
+    SELECT timestamp FROM 
+        temp
     ORDER BY id DESC
     LIMIT 1
     """
@@ -33,16 +33,14 @@ def get_time_of_most_recent_temp():
 
 
 temp = sensor.get_temperature()
-date = str(date.today())
-time = datetime.now().time().replace(microsecond=0)
+timestamp = datetime.now().replace(microsecond=0)
 
-# add_temp(temp, date, time)
+# add_temp(temp, timestamp)
 
-cur.execute('select * from temperatures')
+cur.execute('select * from temp')
 results = cur.fetchall()
 
 print(type(get_time_of_most_recent_temp()))
-print(get_time_of_most_recent_temp())
 print(get_time_of_most_recent_temp())
 
 # for result in results:
