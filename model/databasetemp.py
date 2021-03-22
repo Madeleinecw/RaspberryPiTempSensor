@@ -20,6 +20,7 @@ def add_temp(temp, timestamp):
     cur.execute(query, values)
     conn.commit()
 
+
 def get_time_of_most_recent_temp():
     query = """
     SELECT timestamp FROM 
@@ -30,6 +31,45 @@ def get_time_of_most_recent_temp():
 
     cur.execute(query)
     return cur.fetchall()[0][0]
+
+
+def get_temps():
+    query = """
+    SELECT 
+        temp
+    FROM 
+        temp
+    """
+    cur.execute(query)
+    return cur.fetchall()
+
+
+def get_timestamps():
+    query = """
+    SELECT 
+        timestamp
+    FROM 
+        temp
+    """
+    cur.execute(query)
+    return cur.fetchall()
+
+def temp_list():
+    new_list = []
+    temps_list = get_temps()
+
+    for temps in temps_list:
+        new_list.append(float(temps[0]))
+    return new_list
+
+
+def timestamp_list():
+    new_list = []
+    timestamps = get_timestamps()
+
+    for times in timestamps:
+        new_list.append(times[0].strftime("%x") + " " + times[0].strftime("%X"))
+    return new_list
 
 
 temp = sensor.get_temperature()

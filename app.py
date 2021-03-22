@@ -5,8 +5,8 @@ from time import sleep
 from threading import Thread, Event
 from datetime import date, datetime
 from w1thermsensor import W1ThermSensor
-from model.databasetemp import add_temp, get_time_of_most_recent_temp
-
+from model.databasetemp import add_temp, get_time_of_most_recent_temp, get_temps, get_timestamps
+from testplotting import make_plot
 
 
 app = Flask(__name__)
@@ -39,6 +39,7 @@ def send_time_and_temperature():
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temp().minute):
             save_temp_to_database() 
+            make_plot()
         socketio.sleep(0.5)
          
 

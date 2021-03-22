@@ -44,7 +44,7 @@ def timestamp_list():
     timestamps = get_timestamps()
 
     for times in timestamps:
-        new_list.append(times[0].strftime("%c"))
+        new_list.append(times[0].strftime("%x") + " " + times[0].strftime("%X"))
     return new_list
 
 print(temp_list())
