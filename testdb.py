@@ -1,38 +1,53 @@
 import psycopg2
+from datetime import datetime
 
-conn = psycopg2.connect('dbname=test')
+conn = psycopg2.connect('dbname=TempSense')
 cur = conn.cursor()
 
-def add_person(name, company):
-    query = """
-    INSERT INTO
-        people
-    VALUES
-        (%s, %s)
-    """
-    values = (name, company)
-    cur.execute(query, values)
-    conn.commit()
 
-def get_people_by_company(company):
+
+def get_temps():
     query = """
-    SELECT
-        *
-    FROM
-        people
-    WHERE
-        company = %s
+    SELECT 
+        temp
+    FROM 
+        temp
     """
-    values = (company, )
-    cur.execute(query, values)
+    cur.execute(query)
     return cur.fetchall()
 
-# print(get_people_by_company('Dickhead & Co'))
-# add_person('maddie', 'unemployed')
+def get_timestamps():
+    query = """
+    SELECT 
+        timestamp
+    FROM 
+        temp
+    """
+    cur.execute(query)
+    return cur.fetchall()
 
-cur.execute('select * from people')
+# cur.execute('select * from temp')
 
-results = cur.fetchall()
+# results = cur.fetchall()
 
-for result in results:
-    print(result)
+
+def temp_list():
+    new_list = []
+    temps_list = get_temps()
+
+    for temps in temps_list:
+        new_list.append(float(temps[0]))
+    return new_list
+
+def timestamp_list():
+    new_list = []
+    timestamps = get_timestamps()
+
+    for times in timestamps:
+        new_list.append(times[0].strftime("%c"))
+    return new_list
+
+print(temp_list())
+print(timestamp_list())
+# for result in results:
+#     print(result)
