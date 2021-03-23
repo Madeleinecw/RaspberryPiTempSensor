@@ -2,6 +2,7 @@ from model.databasetemp import get_temps, get_timestamps
 import matplotlib as mpl 
 mpl.use('Agg')
 from matplotlib import pyplot as plt
+from mpld3 import fig_to_html
 
 def make_plot():
     fig = plt.figure()
@@ -18,4 +19,5 @@ def make_plot():
     plt.show()
 
     fig.savefig('static/temp.png')
-
+    plt_html = fig_to_html(fig)
+    return plt_html

@@ -33,13 +33,15 @@ def send_time_and_temperature():
         temperature = sensor.get_temperature()
         timeNow = datetime.now().time().replace(microsecond=0)
         time = str(timeNow)
-        # timestamp = datetime.now().replace(microsecond=0)
         socketio.emit('newTemperature', {'temperature' : temperature}, namespace='/test')
         socketio.emit('newTime', {'time' : time}, namespace='/test')
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temp().minute):
             save_temp_to_database() 
             make_plot()
+            graph = make_plot()
+            print('emitting graph?')
+            socketio.emit('newGraph', {'graph': graph}, namespace='/test')
         socketio.sleep(0.5)
          
 
@@ -54,6 +56,8 @@ def test_connect():
     # need visibility of the global thread object
     global thread
     print('Client connected')
+    graph = make_plot()
+    socketio.emit('newGraph', {'graph': graph}, namespace = '/test')
 
     #Start the random number generator thread only if the thread has not been started before.
     if not thread.isAlive():

@@ -3,6 +3,7 @@ $(document).ready(function() {
     var socket = io.connect('http://' + document.domain + ':' + location.port + '/test');
     var temperature_received = [];
     var time_received = [];
+    var graph_received = [];
 
     socket.on('newTemperature', function(msg) {
         console.log('The Temperature is ' + msg.temperature)
@@ -34,5 +35,24 @@ $(document).ready(function() {
             time_string = time_string + '<p>' + time_received[i].toString() + '</p>';
         }
         $('#time-log').html(time_string);
+    })
+
+    socket.on('newGraph', function(msg) {
+        console.log('The Graph has updated' + msg.graph)
+
+        if (graph_received.length >= 1) {
+            graph_received.shift()
+        }
+
+        graph_received.push(msg.graph)
+        img = '';         
+
+        for (var i = 0; i < graph_received.length; i++) {
+            img = graph_received[i].toString()
+        }
+
+        $('#graph-log').html(img);
+      
+    
     })
 })

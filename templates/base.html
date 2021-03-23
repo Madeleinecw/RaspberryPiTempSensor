@@ -6,12 +6,15 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
     <script src="static/application.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>At <p id="time-log"></p> the temperature is <p id="temp-log"></p> celsius</h1>
-    <img src="../static/temp.png">
-   
+    <div id = "graph-log">
+        
+    </div>      
 </body>
 
 </html>

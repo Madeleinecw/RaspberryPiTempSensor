@@ -1,6 +1,9 @@
 body {
     align-items: center;
     text-align: center;
+    background-color: #941B0C;
+    color: #F6AA1C;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* body > img {
