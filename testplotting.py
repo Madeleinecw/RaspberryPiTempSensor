@@ -9,12 +9,16 @@ def make_plot():
     dev_x = get_temps()
 
     dev_y = get_timestamps()
+    plt.rcParams['axes.facecolor'] = '#621708'
+    plt.rcParams['axes.titlesize'] = 24
+    plt.rcParams['xtick.color'] = '#F6AA1C'
 
-    plt.plot(dev_y, dev_x)
 
-    plt.title('Temperatures by Time of Day')
-    plt.ylabel('Temperatures')
-    plt.xlabel('Time of Day')
+    plt.plot(dev_y, dev_x, color= '#F6AA1C')
+
+    plt.title('Temperatures by Time of Day', color= '#F6AA1C')
+    plt.ylabel('Temperatures', color= '#F6AA1C')
+    plt.xlabel('Time of Day', color= '#F6AA1C')
 
     plt.show()
 
