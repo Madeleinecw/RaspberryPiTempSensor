@@ -1,5 +1,5 @@
 from flask_socketio import SocketIO, emit
-from flask import Flask, render_template, url_for, copy_current_request_context
+from flask import Flask, render_template, url_for, copy_current_request_context, jsonify
 from random import random
 from time import sleep
 from threading import Thread, Event
@@ -27,7 +27,6 @@ def save_temp_to_database():
         add_temp(temp, timestamp)
 
 def send_time_and_temperature():
-    print("getting the temperature")
     while not thread_stop_event.isSet():
         temperature = sensor.get_temperature()
         timeNow = datetime.now().time().replace(microsecond=0)
@@ -37,9 +36,7 @@ def send_time_and_temperature():
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temp().minute):
             save_temp_to_database() 
-            make_plot()
             graph = make_plot()
-            print('emitting graph?')
             socketio.emit('newGraph', {'graph': graph}, namespace='/test')
         socketio.sleep(0.5)
          
@@ -59,7 +56,9 @@ def getGraphAsHtml(startTime: str, endTime: str):
     
     graphHtml = make_plot_from_range(rangeOfTemperatures)
 
-    return graphHtml
+    body = {'graphHtml' : graphHtml}
+
+    return jsonify(body) 
 
 @socketio.on('connect', namespace='/test')
 def test_connect():
@@ -71,7 +70,6 @@ def test_connect():
 
     #Start the random number generator thread only if the thread has not been started before.
     if not thread.isAlive():
-        print("Starting Thread")
         thread = socketio.start_background_task(send_time_and_temperature)
     
 

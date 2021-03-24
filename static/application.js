@@ -6,7 +6,6 @@ $(document).ready(function() {
     var graph_received = [];
 
     socket.on('newTemperature', function(msg) {
-        console.log('The Temperature is ' + msg.temperature)
         
         if (temperature_received.length >= 1) {
             temperature_received.shift()
@@ -22,7 +21,6 @@ $(document).ready(function() {
     })
 
     socket.on('newTime', function(msg) {
-        console.log('The Time is ' + msg.time)
 
         if (time_received.length >= 1) {
             time_received.shift()
@@ -38,7 +36,6 @@ $(document).ready(function() {
     })
 
     socket.on('newGraph', function(msg) {
-        console.log('The Graph has updated' + msg.graph)
 
         if (graph_received.length >= 1) {
             graph_received.shift()

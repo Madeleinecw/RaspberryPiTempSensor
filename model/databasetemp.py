@@ -97,8 +97,6 @@ results = cur.fetchall()
 
 timestr = '2021-03-23T17:38'
 datetime_obj = datetime.strptime(timestr, '%Y-%m-%dT%H:%M')
-print(datetime_obj)
-print(timestamp_list()[-1])
-print(get_temps())
+
 # for result in results:
 #     print(result)

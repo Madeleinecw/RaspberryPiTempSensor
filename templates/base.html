@@ -2,11 +2,12 @@
 </html>
 
 <head>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
     <script src="static/application.js"></script>
     
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
@@ -52,8 +53,8 @@
             } 
             else {
                 fetch(`/getgraph/${startTime}/${endTime}`)
-                    .then(response => response)
-                    .then(data => console.log(data));
+                    .then(response => response.json())
+                    .then(data => $('#graph-log').html(data['graphHtml']));
 
                 console.log('The start time is ' + startTime.replace("T", " ") + ' and the end time is ' + endTime.replace("T", " "))}
 
