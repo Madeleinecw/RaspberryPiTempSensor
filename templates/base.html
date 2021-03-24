@@ -7,11 +7,14 @@
     <script src="static/application.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>At <p id="time-log"></p> the temperature is <p id="temp-log"></p> celsius</h1>
+    <h1 id="time-temp-flex">
+        <div id = "time-flex">At : <div id="time-log"></div></div> 
+        <div id = "temp-flex"> the temperature is :  <div id="temp-log"></div> &#176; C
+        </div></h1>
     <div id = "graph-log">
         
     </div>      

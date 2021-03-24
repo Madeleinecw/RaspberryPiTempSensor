@@ -13,10 +13,10 @@ $(document).ready(function() {
         }
 
         temperature_received.push(msg.temperature)
-        temperatures_string = '';
+        temperatures_string = '  ';
 
         for (var i = 0; i < temperature_received.length; i++) {
-            temperatures_string = temperatures_string + '<p>' + temperature_received[i].toString() + '</p>';
+            temperatures_string = temperatures_string + temperature_received[i].toString();
         }
         $('#temp-log').html(temperatures_string);
     })
@@ -29,10 +29,10 @@ $(document).ready(function() {
         }
 
         time_received.push(msg.time)
-        time_string = '';
+        time_string = '  ';
 
         for (var i = 0; i < time_received.length; i++) {
-            time_string = time_string + '<p>' + time_received[i].toString() + '</p>';
+            time_string = time_string +  time_received[i].toString();
         }
         $('#time-log').html(time_string);
     })

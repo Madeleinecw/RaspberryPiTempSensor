@@ -6,6 +6,29 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#time-temp-flex {
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#time-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#temp-flex {
+    display: flex;
+    flex-direction: row;
+} 
+ #time-log {
+     margin-left: 10px;
+     margin-right: 10px
+ }
+ #temp-log {
+    margin-left: 10px;
+    margin-right: 10px
+}
 /* body > img {
     width: 85%;
-} */
+}
