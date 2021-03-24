@@ -20,6 +20,18 @@ def add_temp(temp, timestamp):
     cur.execute(query, values)
     conn.commit()
 
+def get_temperatures_from_range(startTime:datetime, endTime:datetime) -> list:
+    query = """
+    SELECT temp, timestamp FROM
+        temp
+    WHERE 
+        timestamp
+    BETWEEN %s AND %s
+    """
+
+    cur.execute(query, (startTime, endTime))
+    return cur.fetchall()
+
 
 def get_time_of_most_recent_temp():
     query = """
@@ -72,6 +84,7 @@ def timestamp_list():
     return new_list
 
 
+
 temp = sensor.get_temperature()
 timestamp = datetime.now().replace(microsecond=0)
 
@@ -80,8 +93,10 @@ timestamp = datetime.now().replace(microsecond=0)
 cur.execute('select * from temp')
 results = cur.fetchall()
 
-print(type(get_time_of_most_recent_temp()))
-print(get_time_of_most_recent_temp())
 
+timestr = '2021-03-23T17:38'
+datetime_obj = datetime.strptime(timestr, '%Y-%m-%dT%H:%M')
+print(datetime_obj)
+print(timestamp_list()[-1])
 # for result in results:
 #     print(result)

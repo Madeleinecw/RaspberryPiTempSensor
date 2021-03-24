@@ -5,9 +5,12 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
     <script src="static/application.js"></script>
+    
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -22,19 +25,40 @@
         
     </div>  
     <p>Select Specific Graph:</p>
-    <form id="graph-select-form">    
+    <form id="graph-select-form" >    
         <div id = "flex-start-graph-input">
             <label for="start">Start time:</label>
 
-            <input type="datetime-local" id="graph-start" name='graph-start' >
+            <input type="datetime-local" id="graph-start" name='startTime' min="2021-03-22T12:00">
         </div>
         <div id = "flex-end-graph-input">
             <label for="end">End time:</label>
 
-            <input type="datetime-local" id="graph-end" name='graph-end'>
+            <input type="datetime-local" id="graph-end" name='endTime'>
         </div>  
-        <input type = "submit" value="Get Graph">
+        <input type = "button" id="getGraph" onclick="changeContent()" value="Get Graph">
     </form>
+
+    <script type="text/javascript">
+        function changeContent() {
+
+            var startTime = document.getElementById('graph-start').value;
+            var startAsDate = Date.parse(startTime)
+            var endTime = document.getElementById('graph-end').value;
+            var endAsDate = Date.parse(endTime)
+
+            if (endAsDate <= startAsDate + 599999){
+                window.alert("These dates aren't going to work, bro. Please make sure your start time is before your end time and there is an interval of at least ten minutes.")
+            } 
+            else {
+                fetch(`/getgraph/${startTime}/${endTime}`)
+                    .then(response => response)
+                    .then(data => console.log(data));
+
+                console.log('The start time is ' + startTime.replace("T", " ") + ' and the end time is ' + endTime.replace("T", " "))}
+
+     }
+     </script>
 </body>
 
 </html>

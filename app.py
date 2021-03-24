@@ -7,15 +7,13 @@ from datetime import date, datetime
 from w1thermsensor import W1ThermSensor
 from model.databasetemp import add_temp, get_time_of_most_recent_temp, get_temps, get_timestamps
 from testplotting import make_plot
-
+from markupsafe import escape
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 app.config['DEBUG'] = True
 
-socketio = SocketIO(app, async_mode=None, logger=True, engineio_logger=True)
-
-
+socketio = SocketIO(app, async_mode=None, logger=False, engineio_logger=False)
 
 sensor = W1ThermSensor() 
 thread= Thread()
@@ -45,17 +43,15 @@ def send_time_and_temperature():
         socketio.sleep(0.5)
          
 
-
 @app.route('/')
 def index():
     #only by sending this page first will the client be connected to the socketio instance
     return render_template('base.html')
 
-@app.route('/getgraph/<int:startTime>/<int:endTime>')
-# def getGraph(startTime, endTime):
-    # go to database, get data
-    # using data, generate graph
-    # return graph
+@app.route('/getgraph/<startTime>/<endTime>')
+def getGraph(startTime: str, endTime: str):
+    
+    return escape(startTime) + '' + escape(endTime)
 
 @socketio.on('connect', namespace='/test')
 def test_connect():
