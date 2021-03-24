@@ -11,13 +11,30 @@
 </head>
 
 <body>
+    <header>
+
+    </header>
     <h1 id="time-temp-flex">
         <div id = "time-flex">At : <div id="time-log"></div></div> 
         <div id = "temp-flex"> the temperature is :  <div id="temp-log"></div> &#176; C
         </div></h1>
     <div id = "graph-log">
         
-    </div>      
+    </div>  
+    <p>Select Specific Graph:</p>
+    <form id="graph-select-form">    
+        <div id = "flex-start-graph-input">
+            <label for="start">Start time:</label>
+
+            <input type="datetime-local" id="graph-start" name='graph-start' >
+        </div>
+        <div id = "flex-end-graph-input">
+            <label for="end">End time:</label>
+
+            <input type="datetime-local" id="graph-end" name='graph-end'>
+        </div>  
+        <input type = "submit" value="Get Graph">
+    </form>
 </body>
 
 </html>

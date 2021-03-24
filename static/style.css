@@ -1,3 +1,6 @@
+header {
+    padding: 30px
+}
 body {
     align-items: center;
     text-align: center;
@@ -27,6 +30,21 @@ body {
  }
  #temp-log {
     margin-left: 10px;
+    margin-right: 10px
+}
+
+#graph-select-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px
+}
+#flex-start-graph-input {
+    padding: 10px
+}
+#flex-end-graph-input {
+    padding: 10px;
     margin-right: 10px
 }
 /* body > img {

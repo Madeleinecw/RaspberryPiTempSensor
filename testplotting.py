@@ -7,8 +7,8 @@ from mpld3 import fig_to_html
 def make_plot():
     fig = plt.figure()
     dev_x = get_temps()
-
     dev_y = get_timestamps()
+    
     plt.rcParams['axes.facecolor'] = '#621708'
     plt.rcParams['axes.titlesize'] = 24
     plt.rcParams['xtick.color'] = '#F6AA1C'

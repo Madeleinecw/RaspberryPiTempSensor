@@ -51,6 +51,12 @@ def index():
     #only by sending this page first will the client be connected to the socketio instance
     return render_template('base.html')
 
+@app.route('/getgraph/<int:startTime>/<int:endTime>')
+# def getGraph(startTime, endTime):
+    # go to database, get data
+    # using data, generate graph
+    # return graph
+
 @socketio.on('connect', namespace='/test')
 def test_connect():
     # need visibility of the global thread object
