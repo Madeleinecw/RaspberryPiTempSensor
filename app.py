@@ -5,9 +5,10 @@ from time import sleep
 from threading import Thread, Event
 from datetime import date, datetime
 from w1thermsensor import W1ThermSensor
-from model.databasetemp import add_temp, get_time_of_most_recent_temp, get_temps, get_timestamps
+from model.databasetemp import add_temp, get_time_of_most_recent_temp, get_temps, get_timestamps, get_temperatures_from_range
 from testplotting import make_plot
 from markupsafe import escape
+from graphmaker import make_plot_from_range
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -49,9 +50,16 @@ def index():
     return render_template('base.html')
 
 @app.route('/getgraph/<startTime>/<endTime>')
-def getGraph(startTime: str, endTime: str):
+def getGraphAsHtml(startTime: str, endTime: str):
+
+    formattedStartTime = datetime.strptime(startTime, '%Y-%m-%dT%H:%M')
+    formattedEndTime = datetime.strptime(endTime, '%Y-%m-%dT%H:%M')
     
-    return escape(startTime) + '' + escape(endTime)
+    rangeOfTemperatures = get_temperatures_from_range(formattedStartTime, formattedEndTime)
+    
+    graphHtml = make_plot_from_range(rangeOfTemperatures)
+
+    return graphHtml
 
 @socketio.on('connect', namespace='/test')
 def test_connect():

@@ -1,6 +1,7 @@
 import psycopg2
 from datetime import date, datetime
 from w1thermsensor import W1ThermSensor
+from typing import List, Tuple
 
 sensor = W1ThermSensor() 
 
@@ -20,7 +21,7 @@ def add_temp(temp, timestamp):
     cur.execute(query, values)
     conn.commit()
 
-def get_temperatures_from_range(startTime:datetime, endTime:datetime) -> list:
+def get_temperatures_from_range(startTime:datetime, endTime:datetime) -> List[Tuple[float, datetime]]:
     query = """
     SELECT temp, timestamp FROM
         temp
@@ -98,5 +99,6 @@ timestr = '2021-03-23T17:38'
 datetime_obj = datetime.strptime(timestr, '%Y-%m-%dT%H:%M')
 print(datetime_obj)
 print(timestamp_list()[-1])
+print(get_temps())
 # for result in results:
 #     print(result)
