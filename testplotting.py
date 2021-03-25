@@ -4,9 +4,16 @@ import matplotlib as mpl
 mpl.use('Agg')
 from matplotlib import pyplot as plt
 from mpld3 import fig_to_html, plugins
+from matplotlib.lines import Line2D
 
 def make_plot():
- 
+    
+    css = """
+    .mpld3-tooltip {
+    background-color: white; 
+    color: #AA280E }
+    """ 
+
     fig, ax = plt.subplots()
     dev_x = get_temps()
     dev_y = get_timestamps()
@@ -19,9 +26,8 @@ def make_plot():
     plt.rcParams['axes.titlesize'] = 24
     plt.rcParams['xtick.color'] = '#F6AA1C'
     plt.rcParams['ytick.color'] = '#F6AA1C'
-    plt.grid(b=True, color="#AA280E")
+    plt.grid(b=True, color='#AA280E')
 
-    plt.plot(dev_y, dev_x, 'o', color= '#F6AA1C')
     plt.ylim(16, 20)
     plt.xlim(yesterday, now)
 
@@ -34,11 +40,18 @@ def make_plot():
     
 
     fig.savefig('static/temp.png')
-   
-    lines = ax.plot(dev_y, dev_x, color= '#F6AA1C')
-    labelTooltip = plugins.LineLabelTooltip(lines[0], label='ylabel')
+
+    lines = Line2D(dev_y, dev_x, color= '#F6AA1C', lw=1, marker='.')
+    ax.add_line(lines)
+    
+    new_x = []
+    for i in dev_x:
+        new_x.append(i[0])
+
+    label = [str(i) for i in new_x]
+
+    labelTooltip = plugins.PointHTMLTooltip(lines, label, css=css)
     plugins.connect(fig, labelTooltip)
+
     plt_html = fig_to_html(fig)
-
-
     return plt_html
