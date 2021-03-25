@@ -46,6 +46,13 @@ def index():
     #only by sending this page first will the client be connected to the socketio instance
     return render_template('base.html')
 
+@app.route('/all')
+def getAllTimeGraph():
+    graphHtml = make_plot()
+    body = {'graphHtml': graphHtml}
+
+    return jsonify(body)
+
 @app.route('/getgraph/<startTime>/<endTime>')
 def getGraphAsHtml(startTime: str, endTime: str):
 

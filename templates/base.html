@@ -22,6 +22,7 @@
         <div id = "time-flex">At : <div id="time-log"></div></div> 
         <div id = "temp-flex"> the temperature is :  <div id="temp-log"></div> &#176; C
         </div></h1>
+        <input type = "button" onclick="getHistoricalGraph()" value="Get All">
     <div id = "graph-log">
         
     </div>  
@@ -57,8 +58,14 @@
                     .then(data => $('#graph-log').html(data['graphHtml']));
 
                 console.log('The start time is ' + startTime.replace("T", " ") + ' and the end time is ' + endTime.replace("T", " "))}
-
      }
+
+
+        function getHistoricalGraph() {
+            fetch('/all')
+                .then(response => response.json())
+                .then(data => $('#graph-log').html(data['graphHtml']));
+        }
      </script>
 </body>
 

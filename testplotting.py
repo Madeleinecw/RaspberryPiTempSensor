@@ -19,13 +19,10 @@ def make_plot():
     dev_y = get_timestamps()
 
     now = datetime.now()
-    yesterday = datetime.now() - timedelta(1)
+    yesterday = datetime.now() - timedelta(0.5)
     
    
     plt.rcParams['axes.facecolor'] = '#621708'
-    plt.rcParams['axes.titlesize'] = 24
-    plt.rcParams['xtick.color'] = '#F6AA1C'
-    plt.rcParams['ytick.color'] = '#F6AA1C'
     plt.grid(b=True, color='#AA280E')
 
     plt.ylim(16, 20)
@@ -43,7 +40,7 @@ def make_plot():
 
     lines = Line2D(dev_y, dev_x, color= '#F6AA1C', lw=1, marker='.')
     ax.add_line(lines)
-    
+
     new_x = []
     for i in dev_x:
         new_x.append(i[0])
@@ -53,5 +50,5 @@ def make_plot():
     labelTooltip = plugins.PointHTMLTooltip(lines, label, css=css)
     plugins.connect(fig, labelTooltip)
 
-    plt_html = fig_to_html(fig)
+    plt_html = fig_to_html(fig, figid='graph-log-generated')
     return plt_html
