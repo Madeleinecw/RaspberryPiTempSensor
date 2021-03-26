@@ -19,6 +19,7 @@ socketio = SocketIO(app, async_mode=None, logger=False, engineio_logger=False)
 sensor = W1ThermSensor() 
 thread= Thread()
 thread_stop_event = Event()
+reloadGraph = True
 
 
 def save_temp_to_database():
@@ -27,6 +28,7 @@ def save_temp_to_database():
         add_temp(temp, timestamp)
 
 def send_time_and_temperature():
+    global reloadGraph
     while not thread_stop_event.isSet():
         temperature = sensor.get_temperature()
         timeNow = datetime.now().time().replace(microsecond=0)
@@ -37,9 +39,11 @@ def send_time_and_temperature():
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temp().minute):
             save_temp_to_database() 
             graph = make_plot()
-            socketio.emit('newGraph', {'graph': graph}, namespace='/test')
+            if reloadGraph:
+                socketio.emit('newGraph', {'graph': graph}, namespace='/test')
         socketio.sleep(0.5)
-         
+
+
 
 @app.route('/')
 def index():
@@ -48,14 +52,18 @@ def index():
 
 @app.route('/all')
 def getAllTimeGraph():
+    global reloadGraph
+    reloadGraph = True
     graphHtml = make_plot()
     body = {'graphHtml': graphHtml}
-
+    
     return jsonify(body)
 
 @app.route('/getgraph/<startTime>/<endTime>')
 def getGraphAsHtml(startTime: str, endTime: str):
 
+    global reloadGraph
+    reloadGraph = False
     formattedStartTime = datetime.strptime(startTime, '%Y-%m-%dT%H:%M')
     formattedEndTime = datetime.strptime(endTime, '%Y-%m-%dT%H:%M')
     

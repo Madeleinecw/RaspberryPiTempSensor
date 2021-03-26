@@ -17,7 +17,6 @@ def make_plot_from_range(temperatureHistory: list):
    
     
     plt.rcParams['axes.facecolor'] = '#621708'
-    plt.rcParams['xtick.color'] = '#F6AA1C'
     plt.rcParams['axes.titlesize'] = 24
 
 
@@ -26,6 +25,8 @@ def make_plot_from_range(temperatureHistory: list):
     plt.title('The Times YOU selected:', color= '#F6AA1C')
     plt.ylabel('Temperatures', color= '#F6AA1C')
     plt.xlabel('Time of Day', color= '#F6AA1C')
+    plt.grid(b=True, color='#AA280E')
+
 
     plt.show()
 
