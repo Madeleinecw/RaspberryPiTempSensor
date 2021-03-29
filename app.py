@@ -50,6 +50,10 @@ def index():
     #only by sending this page first will the client be connected to the socketio instance
     return render_template('base.html')
 
+@app.route('/check')
+def check():
+    return render_template('lines.html')
+
 @app.route('/all')
 def getAllTimeGraph():
     global reloadGraph

@@ -27,7 +27,7 @@ def make_plot_from_range(temperatureHistory: list):
     plt.rcParams['axes.titlesize'] = 24
 
 
-    plt.plot(y, x, color= '#F6AA1C')
+    plt.plot(y, x, color= '#F6AA1C', lw=1)
 
     plt.title('The Times YOU selected:', color= '#F6AA1C')
     plt.ylabel('Temperatures', color= '#F6AA1C')
