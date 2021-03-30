@@ -29,7 +29,7 @@ def make_plot_from_range(temperatureHistory: list):
 
     plt.plot(y, x, color= '#F6AA1C', lw=1)
 
-    plt.title('The Times YOU selected:', color= '#F6AA1C')
+    plt.title('Look At This Graph:', color= '#F6AA1C')
     plt.ylabel('Temperatures', color= '#F6AA1C')
     plt.xlabel('Time of Day', color= '#F6AA1C')
     plt.grid(b=True, color='#AA280E')

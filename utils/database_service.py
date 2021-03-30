@@ -1,16 +1,11 @@
 import psycopg2
 from datetime import date, datetime
-from w1thermsensor import W1ThermSensor
 from typing import List, Tuple
-
-sensor = W1ThermSensor() 
 
 conn = psycopg2.connect('dbname=TempSense')
 cur = conn.cursor()
 
-
-
-def add_temp(temp, timestamp):
+def add_temperature(temp, timestamp):
     query = """
     INSERT INTO
         temp
@@ -34,7 +29,7 @@ def get_temperatures_from_range(startTime:datetime, endTime:datetime) -> List[Tu
     return cur.fetchall()
 
 
-def get_time_of_most_recent_temp():
+def get_time_of_most_recent_temperature():
     query = """
     SELECT timestamp FROM 
         temp
@@ -46,7 +41,7 @@ def get_time_of_most_recent_temp():
     return cur.fetchall()[0][0]
 
 
-def get_temps():
+def get_all_temperatures():
     query = """
     SELECT 
         temp
@@ -57,7 +52,7 @@ def get_temps():
     return cur.fetchall()
 
 
-def get_timestamps():
+def get_all_timestamps():
     query = """
     SELECT 
         timestamp
@@ -66,37 +61,3 @@ def get_timestamps():
     """
     cur.execute(query)
     return cur.fetchall()
-
-def temp_list():
-    new_list = []
-    temps_list = get_temps()
-
-    for temps in temps_list:
-        new_list.append(float(temps[0]))
-    return new_list
-
-
-def timestamp_list():
-    new_list = []
-    timestamps = get_timestamps()
-
-    for times in timestamps:
-        new_list.append(times[0].strftime("%x") + " " + times[0].strftime("%X"))
-    return new_list
-
-
-
-temp = sensor.get_temperature()
-timestamp = datetime.now().replace(microsecond=0)
-
-# add_temp(temp, timestamp)
-
-cur.execute('select * from temp')
-results = cur.fetchall()
-
-
-timestr = '2021-03-23T17:38'
-datetime_obj = datetime.strptime(timestr, '%Y-%m-%dT%H:%M')
-
-# for result in results:
-#     print(result)

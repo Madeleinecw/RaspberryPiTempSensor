@@ -1,15 +1,12 @@
-from flask_socketio import SocketIO, emit
-from flask import Flask, render_template, url_for, copy_current_request_context, jsonify
-from random import random
-from time import sleep
-from threading import Thread, Event
 from datetime import date, datetime, timedelta
-from w1thermsensor import W1ThermSensor
-from utils.database_service import add_temp, get_time_of_most_recent_temp, get_temps, get_timestamps, get_temperatures_from_range
-from testplotting import make_plot
-from markupsafe import escape
+from flask import Flask, render_template, url_for, copy_current_request_context, jsonify
+from flask_socketio import SocketIO, emit
 from graphmaker import make_plot_from_range
-from utils.open_weather_map_service import get_outside_temp
+from threading import Thread, Event
+from time import sleep
+from utils.database_service import add_temperature, get_time_of_most_recent_temperature, get_all_temperatures, get_all_timestamps, get_temperatures_from_range
+from utils.open_weather_map_service import get_outside_temp, get_outside_feels_like_temperature
+from w1thermsensor import W1ThermSensor
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -32,8 +29,8 @@ def time_and_temp_background_task():
         socketio.emit('newTemperature', {'temperature' : temperature}, namespace='/test')
         socketio.emit('newTime', {'time' : str(timeNow)}, namespace='/test')
         
-        if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temp().minute):
-            add_temp(temperature, timeNow)
+        if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temperature().minute):
+            add_temperature(temperature, timeNow)
             graph = make_plot_from_range(get_last_7_days())
             if reloadGraph:
                 socketio.emit('newGraph', {'graph': graph}, namespace='/test')
@@ -83,8 +80,11 @@ def test_connect():
 
     print('Client connected')
 
-    graph = make_plot()
+    graph = make_plot_from_range(get_last_7_days())
     socketio.emit('newGraph', {'graph': graph}, namespace = '/test')
+
+    outsideFeelsLikeTemperature = get_outside_feels_like_temperature()
+    socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature}, namespace='/test')
 
     outsideTemp = get_outside_temp()
     socketio.emit('newoutsideTemp', {'outsideTemp' :  outsideTemp}, namespace='/test')

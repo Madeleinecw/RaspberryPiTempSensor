@@ -32,16 +32,18 @@ $(document).ready(function() {
     })
 
     socket.on('newoutsideTemp', function(msg) {
-       
-        console.log(msg.outsideTemp)
 
         img = "<p>The Temperature Outside is : " + msg.outsideTemp.toString() + '&#176; C </p>'         
-        
-
         $('#outside-log').html(img);
       
     
     })
- 
+
+    socket.on('newOutsideFeelsLike', function(msg){
+
+        outside = '<p> But outside it FEELS like : ' + msg.outsideFeelsLikeTemperature.toString() + '&#176; C </p>'
+        $('#outside-feel-log').html(outside)
+    })
+   
 })
 
