@@ -4,6 +4,8 @@ $(document).ready(function() {
     var temperature_received = [];
     var time_received = [];
     var graph_received = [];
+    var outside_received = [];
+    
 
     socket.on('newTemperature', function(msg) {
         
@@ -36,7 +38,7 @@ $(document).ready(function() {
     })
 
     socket.on('newGraph', function(msg) {
-
+       
         if (graph_received.length >= 1) {
             graph_received.shift()
         }
@@ -47,9 +49,33 @@ $(document).ready(function() {
         for (var i = 0; i < graph_received.length; i++) {
             img = graph_received[i].toString()
         }
+       
 
         $('#graph-log').html(img);
       
     
     })
+
+    socket.on('newoutsideTemp', function(msg) {
+       
+        console.log(msg.outsideTemp)
+
+        if (outside_received.length >= 1) {
+            outside_received.shift()
+        }
+        
+        outside_received.push(msg.outsideTemp)
+        img = '';         
+        
+        for (var i = 0; i < outside_received.length; i++) {
+            img = "<p>The Temperature Outside is :" + outside_received[i].toString() + '&#176; C </p>'
+        }
+        
+
+        $('#outside-log').html(img);
+      
+    
+    })
+ 
 })
+
