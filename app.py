@@ -6,6 +6,7 @@ from threading import Thread, Event
 from time import sleep
 from utils.database_service import add_temperature, get_time_of_most_recent_temperature, get_all_temperatures, get_all_timestamps, get_temperatures_from_range
 from utils.open_weather_map_service import get_outside_temp, get_outside_feels_like_temperature
+from utils.temperatures_database_service import add_temperatures_to_temperatures_database
 from w1thermsensor import W1ThermSensor
 
 app = Flask(__name__)
@@ -31,6 +32,7 @@ def time_and_temp_background_task():
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temperature().minute):
             add_temperature(temperature, datetime.now())
+            add_temperatures_to_temperatures_database(temperature, datetime.now(), get_outside_temp(), get_outside_feels_like_temperature())
             graph = make_plot_from_range(get_last_day())
             if reloadGraph:
                 socketio.emit('newGraph', {'graph': graph}, namespace='/test')
