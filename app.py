@@ -31,7 +31,7 @@ def time_and_temp_background_task():
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temperature().minute):
             add_temperature(temperature, datetime.now())
-            graph = make_plot_from_range(get_last_7_days())
+            graph = make_plot_from_range(get_last_day())
             if reloadGraph:
                 socketio.emit('newGraph', {'graph': graph}, namespace='/test')
                 
@@ -41,6 +41,11 @@ def time_and_temp_background_task():
 def get_last_7_days():
     endTime = datetime.now()
     startTime = endTime - timedelta(days=7)   
+    return get_temperatures_from_range(startTime, endTime)
+
+def get_last_day():
+    endTime = datetime.now()
+    startTime = endTime - timedelta(days=1)   
     return get_temperatures_from_range(startTime, endTime)
 
 @app.route('/')
@@ -53,7 +58,7 @@ def getAllTimeGraph():
     global reloadGraph
     reloadGraph = True
 
-    graphHtml = make_plot_from_range(get_last_7_days())
+    graphHtml = make_plot_from_range(get_last_day())
     body = {'graphHtml': graphHtml}
     
     return jsonify(body)
@@ -80,7 +85,7 @@ def test_connect():
 
     print('Client connected')
 
-    graph = make_plot_from_range(get_last_7_days())
+    graph = make_plot_from_range(get_last_day())
     socketio.emit('newGraph', {'graph': graph}, namespace = '/test')
 
     outsideFeelsLikeTemperature = get_outside_feels_like_temperature()
