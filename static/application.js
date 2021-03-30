@@ -1,25 +1,14 @@
 $(document).ready(function() {
 
     var socket = io.connect('http://' + document.domain + ':' + location.port + '/test');
-    var temperature_received = [];
     var time_received = [];
     var graph_received = [];
-    var outside_received = [];
     
 
     socket.on('newTemperature', function(msg) {
         
-        if (temperature_received.length >= 1) {
-            temperature_received.shift()
-        }
-
-        temperature_received.push(msg.temperature)
-        temperatures_string = '  ';
-
-        for (var i = 0; i < temperature_received.length; i++) {
-            temperatures_string = temperatures_string + temperature_received[i].toString();
-        }
-        $('#temp-log').html(temperatures_string);
+   
+        $('#temp-log').html(msg.temperature.toString());
     })
 
     socket.on('newTime', function(msg) {
@@ -60,16 +49,7 @@ $(document).ready(function() {
        
         console.log(msg.outsideTemp)
 
-        if (outside_received.length >= 1) {
-            outside_received.shift()
-        }
-        
-        outside_received.push(msg.outsideTemp)
-        img = '';         
-        
-        for (var i = 0; i < outside_received.length; i++) {
-            img = "<p>The Temperature Outside is :" + outside_received[i].toString() + '&#176; C </p>'
-        }
+        img = "<p>The Temperature Outside is : " + msg.outsideTemp.toString() + '&#176; C </p>'         
         
 
         $('#outside-log').html(img);
