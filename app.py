@@ -30,7 +30,7 @@ def time_and_temp_background_task():
         socketio.emit('newTime', {'time' : str(timeNow)}, namespace='/test')
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temperature().minute):
-            add_temperature(temperature, timeNow)
+            add_temperature(temperature, datetime.now())
             graph = make_plot_from_range(get_last_7_days())
             if reloadGraph:
                 socketio.emit('newGraph', {'graph': graph}, namespace='/test')

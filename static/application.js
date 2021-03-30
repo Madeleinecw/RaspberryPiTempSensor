@@ -23,8 +23,7 @@ $(document).ready(function() {
 
         for (var i = 0; i < graph_received.length; i++) {
             img = graph_received[i].toString()
-        }
-       
+        } 
 
         $('#graph-log').html(img);
       
@@ -34,10 +33,9 @@ $(document).ready(function() {
     socket.on('newoutsideTemp', function(msg) {
 
         img = "<p>The Temperature Outside is : " + msg.outsideTemp.toString() + '&#176; C </p>'         
-        $('#outside-log').html(img);
-      
-    
+        $('#outside-log').html(img);  
     })
+
 
     socket.on('newOutsideFeelsLike', function(msg){
 
