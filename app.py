@@ -3,7 +3,7 @@ from flask import Flask, render_template, url_for, copy_current_request_context,
 from random import random
 from time import sleep
 from threading import Thread, Event
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from w1thermsensor import W1ThermSensor
 from utils.database_service import add_temp, get_time_of_most_recent_temp, get_temps, get_timestamps, get_temperatures_from_range
 from testplotting import make_plot
@@ -34,46 +34,48 @@ def time_and_temp_background_task():
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temp().minute):
             add_temp(temperature, timeNow)
-            graph = make_plot()
+            graph = make_plot_from_range(get_last_7_days())
             if reloadGraph:
                 socketio.emit('newGraph', {'graph': graph}, namespace='/test')
                 
         socketio.sleep(0.5)
 
 
+def get_last_7_days():
+    endTime = datetime.now()
+    startTime = endTime - timedelta(days=7)   
+    return get_temperatures_from_range(startTime, endTime)
+
 @app.route('/')
 def index():
     #only by sending this page first will the client be connected to the socketio instance
     return render_template('base.html')
 
-@app.route('/check')
-def check():
-    return render_template('lines.html')
-
 @app.route('/all')
 def getAllTimeGraph():
     global reloadGraph
     reloadGraph = True
-    graphHtml = make_plot()
+
+    graphHtml = make_plot_from_range(get_last_7_days())
     body = {'graphHtml': graphHtml}
     
     return jsonify(body)
 
+
 @app.route('/getgraph/<startTime>/<endTime>')
 def getGraphAsHtml(startTime: str, endTime: str):
-
     global reloadGraph
     reloadGraph = False
+
     formattedStartTime = datetime.strptime(startTime, '%Y-%m-%dT%H:%M')
     formattedEndTime = datetime.strptime(endTime, '%Y-%m-%dT%H:%M')
     
-    rangeOfTemperatures = get_temperatures_from_range(formattedStartTime, formattedEndTime)
-    
+    rangeOfTemperatures = get_temperatures_from_range(formattedStartTime, formattedEndTime)    
     graphHtml = make_plot_from_range(rangeOfTemperatures)
-
     body = {'graphHtml' : graphHtml}
 
     return jsonify(body) 
+
 
 @socketio.on('connect', namespace='/test')
 def test_connect():
