@@ -16,19 +16,6 @@ def add_temperatures_to_temperatures_database(temperature, timestamp, outsideTem
     cur.execute(query, values)
     conn.commit()
 
-def get_temperatures_from_range(startTime:datetime, endTime:datetime) -> List[Tuple[float, datetime]]:
-    query = """
-    SELECT temp, timestamp FROM
-        temp
-    WHERE 
-        timestamp
-    BETWEEN %s AND %s
-    """
-
-    cur.execute(query, (startTime, endTime))
-    return cur.fetchall()
-
-
 def get_time_of_most_recent_temperature():
     query = """
     SELECT timestamp FROM 
@@ -46,7 +33,7 @@ def get_all_temperatures():
     SELECT 
         temp
     FROM 
-        temp
+        temperatures
     """
     cur.execute(query)
     return cur.fetchall()
@@ -57,7 +44,27 @@ def get_all_timestamps():
     SELECT 
         timestamp
     FROM 
-        temp
+        temperatures
+    """
+    cur.execute(query)
+    return cur.fetchall()
+
+def get_all_outside_temps():
+    query = """
+    SELECT 
+        outsidetemp
+    FROM 
+        temperatures
+    """
+    cur.execute(query)
+    return cur.fetchall()
+
+def get_all_feels_like_temps():
+    query = """
+    SELECT 
+        feelsLike
+    FROM 
+        temperatures
     """
     cur.execute(query)
     return cur.fetchall()
