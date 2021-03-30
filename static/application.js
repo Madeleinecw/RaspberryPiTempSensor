@@ -1,29 +1,15 @@
 $(document).ready(function() {
 
     var socket = io.connect('http://' + document.domain + ':' + location.port + '/test');
-    var time_received = [];
     var graph_received = [];
     
 
-    socket.on('newTemperature', function(msg) {
-        
-   
+    socket.on('newTemperature', function(msg) {  
         $('#temp-log').html(msg.temperature.toString());
     })
 
     socket.on('newTime', function(msg) {
-
-        if (time_received.length >= 1) {
-            time_received.shift()
-        }
-
-        time_received.push(msg.time)
-        time_string = '  ';
-
-        for (var i = 0; i < time_received.length; i++) {
-            time_string = time_string +  time_received[i].toString();
-        }
-        $('#time-log').html(time_string);
+        $('#time-log').html(msg.time.toString());
     })
 
     socket.on('newGraph', function(msg) {

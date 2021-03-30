@@ -1,4 +1,4 @@
-from model.databasetemp import get_temps, get_timestamps
+from utils.database_service import get_temps, get_timestamps
 from datetime import datetime, timedelta
 import matplotlib as mpl 
 mpl.use('Agg')

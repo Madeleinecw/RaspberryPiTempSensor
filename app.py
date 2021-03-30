@@ -5,11 +5,11 @@ from time import sleep
 from threading import Thread, Event
 from datetime import date, datetime
 from w1thermsensor import W1ThermSensor
-from model.databasetemp import add_temp, get_time_of_most_recent_temp, get_temps, get_timestamps, get_temperatures_from_range
+from utils.database_service import add_temp, get_time_of_most_recent_temp, get_temps, get_timestamps, get_temperatures_from_range
 from testplotting import make_plot
 from markupsafe import escape
 from graphmaker import make_plot_from_range
-import requests as reqs 
+from utils.open_weather_map_service import get_outside_temp
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -18,41 +18,27 @@ app.config['DEBUG'] = True
 socketio = SocketIO(app, async_mode=None, logger=False, engineio_logger=False)
 
 sensor = W1ThermSensor() 
-thread= Thread()
+thread = Thread()
 thread_stop_event = Event()
 reloadGraph = True
 
-# External Fetch
-def get_fetch_data():
-    data = {}
-    url = 'https://api.openweathermap.org/data/2.5/weather?id=2648579&appid=ab3b10ceeb32e9e2635906ef718eec7f&units=metric'
-    response = reqs.get(url, data)
-    return response.json()['main']['temp']
 
-def save_temp_to_database():
-        temp = sensor.get_temperature()
-        timestamp = datetime.now().replace(microsecond=0)
-        add_temp(temp, timestamp)
-
-def send_time_and_temperature():
+def time_and_temp_background_task():
     global reloadGraph
     while not thread_stop_event.isSet():
         temperature = sensor.get_temperature()
         timeNow = datetime.now().time().replace(microsecond=0)
         
-        time = str(timeNow)
         socketio.emit('newTemperature', {'temperature' : temperature}, namespace='/test')
-        socketio.emit('newTime', {'time' : time}, namespace='/test')
-        
+        socketio.emit('newTime', {'time' : str(timeNow)}, namespace='/test')
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temp().minute):
-            
-            save_temp_to_database() 
+            add_temp(temperature, timeNow)
             graph = make_plot()
             if reloadGraph:
                 socketio.emit('newGraph', {'graph': graph}, namespace='/test')
+                
         socketio.sleep(0.5)
-
 
 
 @app.route('/')
@@ -91,18 +77,18 @@ def getGraphAsHtml(startTime: str, endTime: str):
 
 @socketio.on('connect', namespace='/test')
 def test_connect():
-    # need visibility of the global thread object
     global thread
+
     print('Client connected')
+
     graph = make_plot()
     socketio.emit('newGraph', {'graph': graph}, namespace = '/test')
-    outsideTemp = get_fetch_data()
-    print(outsideTemp)
+
+    outsideTemp = get_outside_temp()
     socketio.emit('newoutsideTemp', {'outsideTemp' :  outsideTemp}, namespace='/test')
 
-    #Start the random number generator thread only if the thread has not been started before.
     if not thread.isAlive():
-        thread = socketio.start_background_task(send_time_and_temperature)
+        thread = socketio.start_background_task(time_and_temp_background_task)
     
 
 @socketio.on('disconnect', namespace='/test')
