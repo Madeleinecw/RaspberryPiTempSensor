@@ -4,3 +4,32 @@
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 126-610-909
+(17375) wsgi starting up on http://127.0.0.1:5000
+(17375) accepted ('127.0.0.1', 34910)
+127.0.0.1 - - [31/Mar/2021 11:53:30] "GET /socket.io/?EIO=3&transport=polling&t=1617188009930-5 HTTP/1.1" 200 381 0.003843
+(17375) accepted ('127.0.0.1', 34916)
+(17375) accepted ('127.0.0.1', 34918)
+127.0.0.1 - - [31/Mar/2021 11:53:32] "POST /socket.io/?EIO=3&transport=polling&t=1617188009982-6&sid=83eed34aae284494a07fac59cd205ffa HTTP/1.1" 200 219 2.058419
+127.0.0.1 - - [31/Mar/2021 11:53:32] "GET /socket.io/?EIO=3&transport=polling&t=1617188009984-7&sid=83eed34aae284494a07fac59cd205ffa HTTP/1.1" 200 3880 0.002904
+127.0.0.1 - - [31/Mar/2021 11:53:32] "GET /socket.io/?EIO=3&transport=polling&t=1617188012096-8&sid=83eed34aae284494a07fac59cd205ffa HTTP/1.1" 200 215 0.000451
+127.0.0.1 - - [31/Mar/2021 11:53:51] "GET / HTTP/1.1" 200 2897 0.008101
+127.0.0.1 - - [31/Mar/2021 11:53:51] "GET /socket.io/?EIO=3&transport=websocket&sid=83eed34aae284494a07fac59cd205ffa HTTP/1.1" 200 0 19.066581
+127.0.0.1 - - [31/Mar/2021 11:53:51] "GET /socket.io/?EIO=3&transport=polling&t=1617188031207-0 HTTP/1.1" 200 381 0.000732
+127.0.0.1 - - [31/Mar/2021 11:53:52] "POST /socket.io/?EIO=3&transport=polling&t=1617188031232-1&sid=a66c5a6ecdcb465ea4025740fdeb0ce4 HTTP/1.1" 200 219 0.815200
+127.0.0.1 - - [31/Mar/2021 11:53:52] "GET /socket.io/?EIO=3&transport=polling&t=1617188031233-2&sid=a66c5a6ecdcb465ea4025740fdeb0ce4 HTTP/1.1" 200 3887 0.007584
+(17375) accepted ('127.0.0.1', 34930)
+127.0.0.1 - - [31/Mar/2021 11:53:53] "GET /socket.io/?EIO=3&transport=polling&t=1617188032993-3&sid=a66c5a6ecdcb465ea4025740fdeb0ce4 HTTP/1.1" 200 215 0.001291
+ * Detected change in '/home/pi/TempSense/utils/temperatures_database_service.py', reloading
+2021-03-31 11:53:28
+Client connected
+Client disconnected
+Client connected
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/pi/TempSense/app.py", line 9, in <module>
+    from utils.temperatures_database_service import add_temperatures_to_temperatures_database
+  File "/home/pi/TempSense/utils/temperatures_database_service.py", line 20
+    hob    query = """
+      ^
+IndentationError: expected an indented block
+2021-03-31 11:53:26
