@@ -5,21 +5,21 @@ from typing import List, Tuple
 conn = psycopg2.connect('dbname=TempSense')
 cur = conn.cursor()
 
-def add_temperatures_to_temperatures_database(temperature, timestamp, outsideTemperature, feelsLike):
+def add_temperatures_to_temperatures_database(temperature, datetime, outsidetemperature, feelsliketemperature):
     query = """
     INSERT INTO
-        temperatures
+        openweathertemperatures
     VALUES
         (DEFAULT, %s, %s, %s, %s)
     """
-    values = (temperature, timestamp, outsideTemperature, feelsLike)
+    values = (temperature, datetime, outsidetemperature, feelsliketemperature)
     cur.execute(query, values)
     conn.commit()
 
 def get_time_of_most_recent_temperature():
     query = """
-    SELECT timestamp FROM 
-        temperatures
+    SELECT datetime FROM 
+        openweathertemperatures
     ORDER BY id DESC
     LIMIT 1
     """
@@ -31,9 +31,9 @@ def get_time_of_most_recent_temperature():
 def get_all_temperatures():
     query = """
     SELECT 
-        temp
+        temperature
     FROM 
-        temperatures
+        openweathertemperatures
     """
     cur.execute(query)
     return cur.fetchall()
@@ -42,9 +42,9 @@ def get_all_temperatures():
 def get_all_timestamps():
     query = """
     SELECT 
-        timestamp
+        datetime
     FROM 
-        temperatures
+        openweathertemperatures
     """
     cur.execute(query)
     return cur.fetchall()
@@ -52,9 +52,9 @@ def get_all_timestamps():
 def get_all_outside_temps():
     query = """
     SELECT 
-        outsidetemp
+        outsidetemperature
     FROM 
-        temperatures
+        openweathertemperatures
     """
     cur.execute(query)
     return cur.fetchall()
@@ -62,9 +62,12 @@ def get_all_outside_temps():
 def get_all_feels_like_temps():
     query = """
     SELECT 
-        feelsLike
+        feelsliketemperature
     FROM 
-        temperatures
+        openweathertemperatures
     """
     cur.execute(query)
     return cur.fetchall()
+
+
+print(datetime.now().replace(microsecond=0))
