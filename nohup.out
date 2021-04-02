@@ -1,0 +1,756 @@
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 126-610-909
+(28307) wsgi starting up on http://127.0.0.1:5000
+(28307) accepted ('127.0.0.1', 35926)
+127.0.0.1 - - [31/Mar/2021 23:10:06] "GET /static/style.css HTTP/1.1" 200 1220 0.007978
+127.0.0.1 - - [31/Mar/2021 23:10:06] "GET /socket.io/?EIO=3&transport=polling&t=1617228606448-0 HTTP/1.1" 200 381 0.001354
+(28307) accepted ('127.0.0.1', 35932)
+127.0.0.1 - - [31/Mar/2021 23:10:11] "POST /socket.io/?EIO=3&transport=polling&t=1617228606484-1&sid=ee65b750678c4f979c762c2a0a35bb5c HTTP/1.1" 200 220 4.666519
+/usr/lib/python3/dist-packages/matplotlib/pyplot.py:514: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  max_open_warning, RuntimeWarning)
+(28307) accepted ('127.0.0.1', 36248)
+127.0.0.1 - - [01/Apr/2021 10:52:39] "GET /socket.io/?EIO=3&transport=polling&t=1617270758956-176 HTTP/1.1" 200 381 0.000752
+127.0.0.1 - - [01/Apr/2021 10:52:40] "POST /socket.io/?EIO=3&transport=polling&t=1617270759879-177&sid=17061985eee4405f8ed714b66d312b28 HTTP/1.1" 200 220 0.799094
+(28307) accepted ('127.0.0.1', 36254)
+(28307) accepted ('127.0.0.1', 36256)
+127.0.0.1 - - [01/Apr/2021 10:52:41] "GET /socket.io/?EIO=3&transport=polling&t=1617270759884-178&sid=17061985eee4405f8ed714b66d312b28 HTTP/1.1" 200 3913 0.006194
+127.0.0.1 - - [01/Apr/2021 10:52:41] "GET /socket.io/?EIO=3&transport=polling&t=1617270761709-179&sid=17061985eee4405f8ed714b66d312b28 HTTP/1.1" 200 215 0.000674
+127.0.0.1 - - [01/Apr/2021 10:53:06] "GET / HTTP/1.1" 200 2897 0.008599
+127.0.0.1 - - [01/Apr/2021 10:53:06] "GET /socket.io/?EIO=3&transport=websocket&sid=17061985eee4405f8ed714b66d312b28 HTTP/1.1" 200 0 24.550238
+127.0.0.1 - - [01/Apr/2021 10:53:06] "GET /socket.io/?EIO=3&transport=polling&t=1617270786348-0 HTTP/1.1" 200 381 0.002730
+127.0.0.1 - - [01/Apr/2021 10:53:07] "POST /socket.io/?EIO=3&transport=polling&t=1617270786384-1&sid=014f68d07b8a4d9fbc1e78b7dc30b7e9 HTTP/1.1" 200 220 0.850691
+(28307) accepted ('127.0.0.1', 36270)
+127.0.0.1 - - [01/Apr/2021 10:53:08] "GET /socket.io/?EIO=3&transport=polling&t=1617270786385-2&sid=014f68d07b8a4d9fbc1e78b7dc30b7e9 HTTP/1.1" 200 3913 0.002617
+127.0.0.1 - - [01/Apr/2021 10:53:08] "GET /socket.io/?EIO=3&transport=polling&t=1617270788212-3&sid=014f68d07b8a4d9fbc1e78b7dc30b7e9 HTTP/1.1" 200 215 0.000469
+127.0.0.1 - - [01/Apr/2021 10:53:24] "GET /all HTTP/1.1" 200 33719 0.385101
+127.0.0.1 - - [01/Apr/2021 10:53:25] "GET /all HTTP/1.1" 200 33719 0.394563
+127.0.0.1 - - [01/Apr/2021 11:01:07] "GET /socket.io/?EIO=3&transport=websocket&sid=014f68d07b8a4d9fbc1e78b7dc30b7e9 HTTP/1.1" 200 0 479.060422
+(28307) accepted ('127.0.0.1', 36288)
+127.0.0.1 - - [01/Apr/2021 11:01:10] "GET /socket.io/?EIO=3&transport=websocket&sid=101794dfc89d4c6a92b8dc0413d98047 HTTP/1.1" 400 215 0.001449
+(28307) accepted ('127.0.0.1', 36332)
+127.0.0.1 - - [01/Apr/2021 11:22:52] "GET /socket.io/?EIO=3&transport=polling&t=1617272572351-0 HTTP/1.1" 200 381 0.001319
+127.0.0.1 - - [01/Apr/2021 11:22:53] "POST /socket.io/?EIO=3&transport=polling&t=1617272572414-1&sid=a10ea4f26b7f4212b84dd2af35c7fbe2 HTTP/1.1" 200 220 0.822183
+127.0.0.1 - - [01/Apr/2021 11:22:55] "GET /socket.io/?EIO=3&transport=polling&t=1617272574916-10&sid=fd658129f03a4557adb8292083bc04b5 HTTP/1.1" 400 218 0.000398
+127.0.0.1 - - [01/Apr/2021 11:22:55] "POST /socket.io/?EIO=3&transport=polling&t=1617272575599-11&sid=fd658129f03a4557adb8292083bc04b5 HTTP/1.1" 400 239 0.000414
+127.0.0.1 - - [01/Apr/2021 11:22:56] "GET /socket.io/?EIO=3&transport=polling&t=1617272576643-14&sid=72a29801286e49f8a1f14f78bc111e09 HTTP/1.1" 400 218 0.000420
+127.0.0.1 - - [01/Apr/2021 11:22:56] "POST /socket.io/?EIO=3&transport=polling&t=1617272576881-15&sid=72a29801286e49f8a1f14f78bc111e09 HTTP/1.1" 400 239 0.000470
+127.0.0.1 - - [01/Apr/2021 11:22:58] "GET /socket.io/?EIO=3&transport=polling&t=1617272577466-16 HTTP/1.1" 200 381 0.001475
+127.0.0.1 - - [01/Apr/2021 11:22:59] "POST /socket.io/?EIO=3&transport=polling&t=1617272578260-17&sid=826f5cff81494a6a9d6d63c41b86baf5 HTTP/1.1" 200 220 0.852197
+(28307) accepted ('127.0.0.1', 36376)
+127.0.0.1 - - [01/Apr/2021 11:23:00] "GET /socket.io/?EIO=3&transport=polling&t=1617272579627-20 HTTP/1.1" 200 381 0.001144
+127.0.0.1 - - [01/Apr/2021 11:23:01] "POST /socket.io/?EIO=3&transport=polling&t=1617272580004-21&sid=eef8a9a9393349e48f3dd8ce9f98aa72 HTTP/1.1" 200 220 1.140520
+(28307) accepted ('127.0.0.1', 36384)
+127.0.0.1 - - [01/Apr/2021 11:23:02] "GET /socket.io/?EIO=3&transport=polling&t=1617272581400-24 HTTP/1.1" 200 381 0.000715
+127.0.0.1 - - [01/Apr/2021 11:23:03] "POST /socket.io/?EIO=3&transport=polling&t=1617272582082-25&sid=d2237fc7170b4be68c6f8e07179ed81d HTTP/1.1" 200 220 1.172785
+127.0.0.1 - - [01/Apr/2021 11:23:04] "GET /socket.io/?EIO=3&transport=polling&t=1617272583656-28 HTTP/1.1" 200 381 0.000724
+127.0.0.1 - - [01/Apr/2021 11:23:05] "POST /socket.io/?EIO=3&transport=polling&t=1617272584162-29&sid=9b341dd4e63b4225a5a2ca7e969f6b5a HTTP/1.1" 200 220 0.825593
+127.0.0.1 - - [01/Apr/2021 11:23:05] "GET /socket.io/?EIO=3&transport=polling&t=1617272585070-32 HTTP/1.1" 200 381 0.000914
+(28307) accepted ('127.0.0.1', 36400)
+127.0.0.1 - - [01/Apr/2021 11:23:06] "POST /socket.io/?EIO=3&transport=polling&t=1617272585852-33&sid=5c932894719542dbbe0a254cf65547bd HTTP/1.1" 200 220 0.825234
+127.0.0.1 - - [01/Apr/2021 11:23:08] "GET /socket.io/?EIO=3&transport=polling&t=1617272587920-36 HTTP/1.1" 200 381 0.000749
+127.0.0.1 - - [01/Apr/2021 11:23:08] "POST /socket.io/?EIO=3&transport=polling&t=1617272587938-37&sid=5d7707cc8ce7429f83eaeee7dc70c168 HTTP/1.1" 200 220 0.855481
+127.0.0.1 - - [01/Apr/2021 11:23:09] "GET /socket.io/?EIO=3&transport=polling&t=1617272589369-42&sid=8eb194607cbe4db58ddeb98b02bd9e18 HTTP/1.1" 400 218 0.000425
+(28307) accepted ('127.0.0.1', 36416)
+127.0.0.1 - - [01/Apr/2021 11:23:09] "POST /socket.io/?EIO=3&transport=polling&t=1617272589685-43&sid=8eb194607cbe4db58ddeb98b02bd9e18 HTTP/1.1" 400 239 0.000456
+127.0.0.1 - - [01/Apr/2021 11:23:11] "GET /socket.io/?EIO=3&transport=polling&t=1617272591127-46&sid=b6da65f7dfee46ab833de92d27c51c45 HTTP/1.1" 400 218 0.000914
+127.0.0.1 - - [01/Apr/2021 11:23:11] "POST /socket.io/?EIO=3&transport=polling&t=1617272591155-47&sid=b6da65f7dfee46ab833de92d27c51c45 HTTP/1.1" 400 239 0.000901
+127.0.0.1 - - [01/Apr/2021 11:23:12] "GET /socket.io/?EIO=3&transport=polling&t=1617272592841-50&sid=8a93fec3070c4eec962f3e45a1e2fc23 HTTP/1.1" 400 218 0.000929
+127.0.0.1 - - [01/Apr/2021 11:23:12] "POST /socket.io/?EIO=3&transport=polling&t=1617272592865-51&sid=8a93fec3070c4eec962f3e45a1e2fc23 HTTP/1.1" 400 239 0.000873
+127.0.0.1 - - [01/Apr/2021 11:23:13] "GET /socket.io/?EIO=3&transport=polling&t=1617272593541-52 HTTP/1.1" 200 381 0.001133
+127.0.0.1 - - [01/Apr/2021 11:23:14] "POST /socket.io/?EIO=3&transport=polling&t=1617272593762-53&sid=839082126d784d69b8e39ab77df00b00 HTTP/1.1" 200 220 0.843255
+127.0.0.1 - - [01/Apr/2021 11:23:15] "GET /socket.io/?EIO=3&transport=polling&t=1617272595110-56 HTTP/1.1" 200 381 0.000719
+(28307) accepted ('127.0.0.1', 36440)
+127.0.0.1 - - [01/Apr/2021 11:23:16] "POST /socket.io/?EIO=3&transport=polling&t=1617272595565-57&sid=c6c81d74983942d3bb15078169091266 HTTP/1.1" 200 220 0.843515
+127.0.0.1 - - [01/Apr/2021 11:23:17] "GET /socket.io/?EIO=3&transport=polling&t=1617272597032-60 HTTP/1.1" 200 381 0.000730
+127.0.0.1 - - [01/Apr/2021 11:23:18] "POST /socket.io/?EIO=3&transport=polling&t=1617272597310-61&sid=6b16d6cf0a9d40ac8d597cd8bbbfe27d HTTP/1.1" 200 220 0.841436
+127.0.0.1 - - [01/Apr/2021 11:23:19] "GET /socket.io/?EIO=3&transport=polling&t=1617272598542-64 HTTP/1.1" 200 381 0.000800
+127.0.0.1 - - [01/Apr/2021 11:23:20] "POST /socket.io/?EIO=3&transport=polling&t=1617272599045-65&sid=ba1bf0f587a24cd5b355e8ba38dadc61 HTTP/1.1" 200 220 0.872661
+127.0.0.1 - - [01/Apr/2021 11:23:22] "GET /socket.io/?EIO=3&transport=polling&t=1617272601448-70&sid=9dd1aedef1d44122bec7a102fea4ad30 HTTP/1.1" 400 218 0.000397
+127.0.0.1 - - [01/Apr/2021 11:23:23] "GET /socket.io/?EIO=3&transport=polling&t=1617272603032-72 HTTP/1.1" 200 381 0.000718
+127.0.0.1 - - [01/Apr/2021 11:23:24] "POST /socket.io/?EIO=3&transport=polling&t=1617272603844-73&sid=896eb940df774ad29d20ca11bbd7f9ed HTTP/1.1" 200 220 0.780532
+127.0.0.1 - - [01/Apr/2021 11:23:26] "GET /socket.io/?EIO=3&transport=polling&t=1617272606002-78&sid=1a4ffef17f8e460eb657da435c0ca69f HTTP/1.1" 400 218 0.000451
+127.0.0.1 - - [01/Apr/2021 11:23:27] "POST /socket.io/?EIO=3&transport=polling&t=1617272606024-79&sid=1a4ffef17f8e460eb657da435c0ca69f HTTP/1.1" 400 239 0.000406
+127.0.0.1 - - [01/Apr/2021 11:23:27] "GET /socket.io/?EIO=3&transport=polling&t=1617272606979-80 HTTP/1.1" 200 381 0.000778
+127.0.0.1 - - [01/Apr/2021 11:23:27] "POST /socket.io/?EIO=3&transport=polling&t=1617272606997-81&sid=c4163004af584eee90fb4754305c1d8e HTTP/1.1" 200 220 0.851313
+127.0.0.1 - - [01/Apr/2021 11:23:29] "GET /socket.io/?EIO=3&transport=polling&t=1617272609187-86&sid=1b593163bb8d46ddb93ad4059801dadf HTTP/1.1" 400 218 0.000454
+127.0.0.1 - - [01/Apr/2021 11:23:30] "POST /socket.io/?EIO=3&transport=polling&t=1617272609216-87&sid=1b593163bb8d46ddb93ad4059801dadf HTTP/1.1" 400 239 0.000416
+127.0.0.1 - - [01/Apr/2021 11:23:31] "GET /socket.io/?EIO=3&transport=polling&t=1617272611061-90&sid=ffeee169dfb04703bf4d25e7cbed2b87 HTTP/1.1" 400 218 0.000422
+127.0.0.1 - - [01/Apr/2021 11:23:31] "POST /socket.io/?EIO=3&transport=polling&t=1617272611541-91&sid=ffeee169dfb04703bf4d25e7cbed2b87 HTTP/1.1" 400 239 0.000455
+127.0.0.1 - - [01/Apr/2021 11:23:32] "GET /socket.io/?EIO=3&transport=polling&t=1617272612736-94&sid=86181a61aaf343be9cb6ff3931babb4d HTTP/1.1" 400 218 0.000688
+127.0.0.1 - - [01/Apr/2021 11:23:32] "POST /socket.io/?EIO=3&transport=polling&t=1617272612825-95&sid=86181a61aaf343be9cb6ff3931babb4d HTTP/1.1" 400 239 0.000831
+127.0.0.1 - - [01/Apr/2021 11:23:34] "GET /socket.io/?EIO=3&transport=polling&t=1617272613580-96 HTTP/1.1" 200 381 0.000714
+127.0.0.1 - - [01/Apr/2021 11:23:35] "POST /socket.io/?EIO=3&transport=polling&t=1617272614202-97&sid=b597f36c2ee54e769a8e26137c30da46 HTTP/1.1" 200 220 0.891219
+127.0.0.1 - - [01/Apr/2021 11:23:36] "GET /socket.io/?EIO=3&transport=polling&t=1617272615851-100 HTTP/1.1" 200 381 0.001303
+127.0.0.1 - - [01/Apr/2021 11:23:37] "POST /socket.io/?EIO=3&transport=polling&t=1617272616012-101&sid=d9ced344fa78413b83926de347756514 HTTP/1.1" 200 220 1.071532
+127.0.0.1 - - [01/Apr/2021 11:23:38] "GET /socket.io/?EIO=3&transport=polling&t=1617272617285-106&sid=e8505adc957649098ebad8f137727217 HTTP/1.1" 400 218 0.000389
+127.0.0.1 - - [01/Apr/2021 11:23:38] "POST /socket.io/?EIO=3&transport=polling&t=1617272618034-107&sid=e8505adc957649098ebad8f137727217 HTTP/1.1" 400 239 0.000483
+127.0.0.1 - - [01/Apr/2021 11:23:39] "GET /socket.io/?EIO=3&transport=polling&t=1617272619121-110&sid=fffb235af83f442d9a287f691ab8c5b3 HTTP/1.1" 400 218 0.000614
+127.0.0.1 - - [01/Apr/2021 11:23:39] "POST /socket.io/?EIO=3&transport=polling&t=1617272619395-111&sid=fffb235af83f442d9a287f691ab8c5b3 HTTP/1.1" 400 239 0.000658
+127.0.0.1 - - [01/Apr/2021 11:23:41] "GET /socket.io/?EIO=3&transport=polling&t=1617272620895-114&sid=43bb0141f8934b158b3c98bd95882628 HTTP/1.1" 400 218 0.000531
+127.0.0.1 - - [01/Apr/2021 11:23:41] "POST /socket.io/?EIO=3&transport=polling&t=1617272620914-115&sid=43bb0141f8934b158b3c98bd95882628 HTTP/1.1" 400 239 0.000550
+127.0.0.1 - - [01/Apr/2021 11:23:42] "GET /socket.io/?EIO=3&transport=polling&t=1617272622601-118&sid=a78e8603069f4b909bac20f8866d9b53 HTTP/1.1" 400 218 0.000560
+127.0.0.1 - - [01/Apr/2021 11:23:42] "POST /socket.io/?EIO=3&transport=polling&t=1617272622621-119&sid=a78e8603069f4b909bac20f8866d9b53 HTTP/1.1" 400 239 0.000464
+127.0.0.1 - - [01/Apr/2021 11:23:43] "GET /socket.io/?EIO=3&transport=polling&t=1617272623305-120 HTTP/1.1" 200 381 0.000717
+127.0.0.1 - - [01/Apr/2021 11:23:44] "POST /socket.io/?EIO=3&transport=polling&t=1617272623532-121&sid=3567b71efcd941d89ac68cc6a86bd0b6 HTTP/1.1" 200 220 0.853500
+127.0.0.1 - - [01/Apr/2021 11:23:46] "GET /socket.io/?EIO=3&transport=polling&t=1617272625844-126&sid=6586fe28edc746ba9230297cb35db0c2 HTTP/1.1" 400 218 0.000396
+127.0.0.1 - - [01/Apr/2021 11:23:46] "POST /socket.io/?EIO=3&transport=polling&t=1617272626646-127&sid=6586fe28edc746ba9230297cb35db0c2 HTTP/1.1" 400 239 0.000399
+127.0.0.1 - - [01/Apr/2021 11:23:48] "GET /socket.io/?EIO=3&transport=polling&t=1617272628066-130&sid=e594ddac88bf4010a3792dfa9007db5e HTTP/1.1" 400 218 0.000754
+127.0.0.1 - - [01/Apr/2021 11:23:48] "POST /socket.io/?EIO=3&transport=polling&t=1617272628093-131&sid=e594ddac88bf4010a3792dfa9007db5e HTTP/1.1" 400 239 0.000785
+127.0.0.1 - - [01/Apr/2021 11:23:50] "GET /socket.io/?EIO=3&transport=polling&t=1617272629936-134&sid=df64e5fb945647ecb5fd42d60e612194 HTTP/1.1" 400 218 0.000431
+127.0.0.1 - - [01/Apr/2021 11:23:50] "POST /socket.io/?EIO=3&transport=polling&t=1617272630797-135&sid=df64e5fb945647ecb5fd42d60e612194 HTTP/1.1" 400 239 0.000456
+127.0.0.1 - - [01/Apr/2021 11:23:52] "GET /socket.io/?EIO=3&transport=polling&t=1617272631699-138&sid=37b55bdf34bd425ea0e348ee0d409423 HTTP/1.1" 400 218 0.000419
+127.0.0.1 - - [01/Apr/2021 11:23:52] "POST /socket.io/?EIO=3&transport=polling&t=1617272632083-139&sid=37b55bdf34bd425ea0e348ee0d409423 HTTP/1.1" 400 239 0.000430
+127.0.0.1 - - [01/Apr/2021 11:23:53] "GET /socket.io/?EIO=3&transport=polling&t=1617272633557-142&sid=b3f4e7e40bba4d88b66932289a8183da HTTP/1.1" 400 218 0.000447
+127.0.0.1 - - [01/Apr/2021 11:23:53] "POST /socket.io/?EIO=3&transport=polling&t=1617272633580-143&sid=b3f4e7e40bba4d88b66932289a8183da HTTP/1.1" 400 239 0.000463
+127.0.0.1 - - [01/Apr/2021 11:23:54] "GET /socket.io/?EIO=3&transport=polling&t=1617272634551-144 HTTP/1.1" 200 381 0.000740
+127.0.0.1 - - [01/Apr/2021 11:23:55] "POST /socket.io/?EIO=3&transport=polling&t=1617272634839-145&sid=a899f33154ec4a1b8c957d0f70a69d98 HTTP/1.1" 200 220 1.002753
+127.0.0.1 - - [01/Apr/2021 11:23:56] "GET /socket.io/?EIO=3&transport=polling&t=1617272636376-148 HTTP/1.1" 200 381 0.000725
+127.0.0.1 - - [01/Apr/2021 11:23:57] "POST /socket.io/?EIO=3&transport=polling&t=1617272636722-149&sid=705f19275b424345b88cafe260c002be HTTP/1.1" 200 220 0.841311
+127.0.0.1 - - [01/Apr/2021 11:23:58] "GET /socket.io/?EIO=3&transport=polling&t=1617272638077-152 HTTP/1.1" 200 381 0.000731
+127.0.0.1 - - [01/Apr/2021 11:23:59] "POST /socket.io/?EIO=3&transport=polling&t=1617272638532-153&sid=186384fb70a24c2ca8eb73850cd2f2af HTTP/1.1" 200 220 0.838735
+127.0.0.1 - - [01/Apr/2021 11:24:00] "GET /socket.io/?EIO=3&transport=polling&t=1617272639649-156 HTTP/1.1" 200 381 0.000869
+127.0.0.1 - - [01/Apr/2021 11:24:01] "POST /socket.io/?EIO=3&transport=polling&t=1617272640254-157&sid=f0697865d5b14b5cbe7a7e50997d1002 HTTP/1.1" 200 220 0.916840
+127.0.0.1 - - [01/Apr/2021 11:24:02] "GET /socket.io/?EIO=3&transport=polling&t=1617272642046-160 HTTP/1.1" 200 381 0.000730
+127.0.0.1 - - [01/Apr/2021 11:24:03] "POST /socket.io/?EIO=3&transport=polling&t=1617272642079-161&sid=82a0d9cde7cd44e9a55508b66006ca97 HTTP/1.1" 200 220 0.885401
+127.0.0.1 - - [01/Apr/2021 11:24:03] "GET /socket.io/?EIO=3&transport=polling&t=1617272643534-164 HTTP/1.1" 200 381 0.001652
+127.0.0.1 - - [01/Apr/2021 11:24:04] "POST /socket.io/?EIO=3&transport=polling&t=1617272643840-165&sid=af568c728c0443dfb0d9f1783cd11f51 HTTP/1.1" 200 220 0.823751
+127.0.0.1 - - [01/Apr/2021 11:24:05] "GET /socket.io/?EIO=3&transport=polling&t=1617272645046-170&sid=18a4739feaef41d385f7d493df1a50fd HTTP/1.1" 400 218 0.000393
+127.0.0.1 - - [01/Apr/2021 11:24:05] "POST /socket.io/?EIO=3&transport=polling&t=1617272645640-171&sid=18a4739feaef41d385f7d493df1a50fd HTTP/1.1" 400 239 0.000403
+127.0.0.1 - - [01/Apr/2021 11:24:06] "GET /socket.io/?EIO=3&transport=polling&t=1617272646844-174&sid=269e7b04ea3f43d38ee7382f7a59107a HTTP/1.1" 400 218 0.000440
+127.0.0.1 - - [01/Apr/2021 11:24:06] "POST /socket.io/?EIO=3&transport=polling&t=1617272646885-175&sid=269e7b04ea3f43d38ee7382f7a59107a HTTP/1.1" 400 239 0.000443
+127.0.0.1 - - [01/Apr/2021 11:24:08] "GET /socket.io/?EIO=3&transport=polling&t=1617272648565-178&sid=290ddb66e86a41638178e19784116c19 HTTP/1.1" 400 218 0.000462
+127.0.0.1 - - [01/Apr/2021 11:24:08] "POST /socket.io/?EIO=3&transport=polling&t=1617272648587-179&sid=290ddb66e86a41638178e19784116c19 HTTP/1.1" 400 239 0.000435
+127.0.0.1 - - [01/Apr/2021 11:24:11] "GET /socket.io/?EIO=3&transport=polling&t=1617272650351-182&sid=bb074cca085248efb9f341ae1ad46280 HTTP/1.1" 400 218 0.001141
+127.0.0.1 - - [01/Apr/2021 11:24:11] "POST /socket.io/?EIO=3&transport=polling&t=1617272651043-183&sid=bb074cca085248efb9f341ae1ad46280 HTTP/1.1" 400 239 0.000486
+127.0.0.1 - - [01/Apr/2021 11:24:12] "GET /socket.io/?EIO=3&transport=polling&t=1617272652240-186&sid=6b815aab34e047058f9d67c07936c160 HTTP/1.1" 400 218 0.000439
+127.0.0.1 - - [01/Apr/2021 11:24:12] "POST /socket.io/?EIO=3&transport=polling&t=1617272652411-187&sid=6b815aab34e047058f9d67c07936c160 HTTP/1.1" 400 239 0.000468
+127.0.0.1 - - [01/Apr/2021 11:24:14] "GET /socket.io/?EIO=3&transport=polling&t=1617272654047-190&sid=88dd971f6f32457c86c82191feb27fa7 HTTP/1.1" 400 218 0.000771
+127.0.0.1 - - [01/Apr/2021 11:24:14] "POST /socket.io/?EIO=3&transport=polling&t=1617272654069-191&sid=88dd971f6f32457c86c82191feb27fa7 HTTP/1.1" 400 239 0.000819
+127.0.0.1 - - [01/Apr/2021 11:24:15] "GET /socket.io/?EIO=3&transport=polling&t=1617272654728-192 HTTP/1.1" 200 381 0.000728
+127.0.0.1 - - [01/Apr/2021 11:24:16] "POST /socket.io/?EIO=3&transport=polling&t=1617272655122-193&sid=7c06dbe45cc6456a849a42691f2083e2 HTTP/1.1" 200 220 0.837173
+127.0.0.1 - - [01/Apr/2021 11:24:18] "GET /socket.io/?EIO=3&transport=polling&t=1617272657381-196 HTTP/1.1" 200 381 0.000718
+127.0.0.1 - - [01/Apr/2021 11:24:19] "POST /socket.io/?EIO=3&transport=polling&t=1617272658262-197&sid=b4bf42688d934f1c9bcb4d64c6e05de9 HTTP/1.1" 200 220 0.880826
+127.0.0.1 - - [01/Apr/2021 11:24:20] "GET /socket.io/?EIO=3&transport=polling&t=1617272659346-200 HTTP/1.1" 200 381 0.001348
+127.0.0.1 - - [01/Apr/2021 11:24:20] "POST /socket.io/?EIO=3&transport=polling&t=1617272660088-201&sid=fc4fa3bdbd1a4d4ca3bd59ac0b67669c HTTP/1.1" 200 220 0.793487
+127.0.0.1 - - [01/Apr/2021 11:24:21] "GET /socket.io/?EIO=3&transport=polling&t=1617272661597-204 HTTP/1.1" 200 381 0.001637
+127.0.0.1 - - [01/Apr/2021 11:24:22] "POST /socket.io/?EIO=3&transport=polling&t=1617272661778-205&sid=66409ce7f18e41adbe31a512c8a7e01a HTTP/1.1" 200 220 0.876733
+127.0.0.1 - - [01/Apr/2021 11:24:23] "GET /socket.io/?EIO=3&transport=polling&t=1617272663292-208 HTTP/1.1" 200 381 0.001557
+127.0.0.1 - - [01/Apr/2021 11:24:24] "POST /socket.io/?EIO=3&transport=polling&t=1617272663608-209&sid=a00ec18ceaf04e69b3daed965e94a372 HTTP/1.1" 200 220 0.872677
+127.0.0.1 - - [01/Apr/2021 11:24:25] "GET /socket.io/?EIO=3&transport=polling&t=1617272665431-212 HTTP/1.1" 200 381 0.000767
+127.0.0.1 - - [01/Apr/2021 11:24:26] "POST /socket.io/?EIO=3&transport=polling&t=1617272665450-213&sid=b7c8e0934a0e42c8a7ada363cc43f422 HTTP/1.1" 200 220 0.799528
+127.0.0.1 - - [01/Apr/2021 11:24:27] "GET /socket.io/?EIO=3&transport=polling&t=1617272666889-216 HTTP/1.1" 200 381 0.001718
+127.0.0.1 - - [01/Apr/2021 11:24:28] "POST /socket.io/?EIO=3&transport=polling&t=1617272667125-217&sid=61770a6e41ff4c228f95062aa7450a07 HTTP/1.1" 200 220 0.825172
+127.0.0.1 - - [01/Apr/2021 11:24:28] "GET /socket.io/?EIO=3&transport=polling&t=1617272668239-220 HTTP/1.1" 200 381 0.000730
+127.0.0.1 - - [01/Apr/2021 11:24:29] "POST /socket.io/?EIO=3&transport=polling&t=1617272668881-221&sid=0a4f75e2ad6d4f57bae7815517e06565 HTTP/1.1" 200 220 0.816822
+127.0.0.1 - - [01/Apr/2021 11:24:31] "GET /socket.io/?EIO=3&transport=polling&t=1617272670962-226&sid=1c69c63bf9a74f91bab2af026a6b1401 HTTP/1.1" 400 218 0.000458
+127.0.0.1 - - [01/Apr/2021 11:24:31] "POST /socket.io/?EIO=3&transport=polling&t=1617272670986-227&sid=1c69c63bf9a74f91bab2af026a6b1401 HTTP/1.1" 400 239 0.000449
+127.0.0.1 - - [01/Apr/2021 11:24:33] "GET /socket.io/?EIO=3&transport=polling&t=1617272672744-230&sid=5106ee1a7564411bb72b212db84e9d93 HTTP/1.1" 400 218 0.001209
+127.0.0.1 - - [01/Apr/2021 11:24:33] "POST /socket.io/?EIO=3&transport=polling&t=1617272673393-231&sid=5106ee1a7564411bb72b212db84e9d93 HTTP/1.1" 400 239 0.001266
+127.0.0.1 - - [01/Apr/2021 11:24:34] "GET /socket.io/?EIO=3&transport=polling&t=1617272674517-234&sid=08ad277e236a4633a29e25031ec57ded HTTP/1.1" 400 218 0.000455
+127.0.0.1 - - [01/Apr/2021 11:24:34] "POST /socket.io/?EIO=3&transport=polling&t=1617272674724-235&sid=08ad277e236a4633a29e25031ec57ded HTTP/1.1" 400 239 0.000546
+127.0.0.1 - - [01/Apr/2021 11:24:36] "GET /socket.io/?EIO=3&transport=polling&t=1617272676360-238&sid=c0a3e87b8f784949b5409bd574c7aebb HTTP/1.1" 400 218 0.000449
+127.0.0.1 - - [01/Apr/2021 11:24:36] "POST /socket.io/?EIO=3&transport=polling&t=1617272676386-239&sid=c0a3e87b8f784949b5409bd574c7aebb HTTP/1.1" 400 239 0.000519
+127.0.0.1 - - [01/Apr/2021 11:24:38] "GET /socket.io/?EIO=3&transport=polling&t=1617272678203-242&sid=d6c3c931d05643b29040c060f5b4bd16 HTTP/1.1" 400 218 0.000954
+127.0.0.1 - - [01/Apr/2021 11:24:38] "POST /socket.io/?EIO=3&transport=polling&t=1617272678889-243&sid=d6c3c931d05643b29040c060f5b4bd16 HTTP/1.1" 400 239 0.001145
+127.0.0.1 - - [01/Apr/2021 11:24:40] "GET /socket.io/?EIO=3&transport=polling&t=1617272680277-246&sid=fa2cd63329624f0e934ae6487544fb82 HTTP/1.1" 400 218 0.000974
+127.0.0.1 - - [01/Apr/2021 11:24:40] "POST /socket.io/?EIO=3&transport=polling&t=1617272680301-247&sid=fa2cd63329624f0e934ae6487544fb82 HTTP/1.1" 400 239 0.000984
+127.0.0.1 - - [01/Apr/2021 11:24:42] "GET /socket.io/?EIO=3&transport=polling&t=1617272682093-250&sid=a8168eceac604f7fbd499d641798c6e3 HTTP/1.1" 400 218 0.000784
+127.0.0.1 - - [01/Apr/2021 11:24:43] "POST /socket.io/?EIO=3&transport=polling&t=1617272682122-251&sid=a8168eceac604f7fbd499d641798c6e3 HTTP/1.1" 400 239 0.000930
+127.0.0.1 - - [01/Apr/2021 11:24:43] "GET /socket.io/?EIO=3&transport=polling&t=1617272683398-254&sid=fdf143cdbb9c4d06979f3b1ab6eb17ef HTTP/1.1" 400 218 0.000383
+127.0.0.1 - - [01/Apr/2021 11:24:43] "POST /socket.io/?EIO=3&transport=polling&t=1617272683419-255&sid=fdf143cdbb9c4d06979f3b1ab6eb17ef HTTP/1.1" 400 239 0.000385
+127.0.0.1 - - [01/Apr/2021 11:24:44] "GET /socket.io/?EIO=3&transport=polling&t=1617272684217-256 HTTP/1.1" 200 381 0.001804
+127.0.0.1 - - [01/Apr/2021 11:24:45] "POST /socket.io/?EIO=3&transport=polling&t=1617272684427-257&sid=b06ff376378e46078463265f7c29dbff HTTP/1.1" 200 220 0.880654
+127.0.0.1 - - [01/Apr/2021 11:24:46] "GET /socket.io/?EIO=3&transport=polling&t=1617272686288-260 HTTP/1.1" 200 381 0.001237
+127.0.0.1 - - [01/Apr/2021 11:24:47] "POST /socket.io/?EIO=3&transport=polling&t=1617272686318-261&sid=d7759506ae9e443aac1566fea7228dff HTTP/1.1" 200 220 0.861856
+127.0.0.1 - - [01/Apr/2021 11:24:48] "GET /socket.io/?EIO=3&transport=polling&t=1617272687844-266&sid=afa5655156e547a7bd5e9800f259ac35 HTTP/1.1" 400 218 0.000426
+127.0.0.1 - - [01/Apr/2021 11:24:48] "POST /socket.io/?EIO=3&transport=polling&t=1617272688083-267&sid=afa5655156e547a7bd5e9800f259ac35 HTTP/1.1" 400 239 0.000455
+127.0.0.1 - - [01/Apr/2021 11:24:49] "GET /socket.io/?EIO=3&transport=polling&t=1617272689574-270&sid=4544b06b0f87473ab7c441c24f1a53b9 HTTP/1.1" 400 218 0.000439
+127.0.0.1 - - [01/Apr/2021 11:24:49] "POST /socket.io/?EIO=3&transport=polling&t=1617272689602-271&sid=4544b06b0f87473ab7c441c24f1a53b9 HTTP/1.1" 400 239 0.000457
+127.0.0.1 - - [01/Apr/2021 11:24:51] "GET /socket.io/?EIO=3&transport=polling&t=1617272691281-274&sid=abf9d237d72f45709f36526a13ace292 HTTP/1.1" 400 218 0.000446
+127.0.0.1 - - [01/Apr/2021 11:24:51] "POST /socket.io/?EIO=3&transport=polling&t=1617272691303-275&sid=abf9d237d72f45709f36526a13ace292 HTTP/1.1" 400 239 0.000464
+(28307) accepted ('127.0.0.1', 36668)
+127.0.0.1 - - [01/Apr/2021 11:24:53] "GET /socket.io/?EIO=3&transport=polling&t=1617272692959-278&sid=691fe6f3ea1d4968becf35b93db707ee HTTP/1.1" 400 218 0.000384
+127.0.0.1 - - [01/Apr/2021 11:24:53] "GET /socket.io/?EIO=3&transport=websocket&sid=691fe6f3ea1d4968becf35b93db707ee HTTP/1.1" 400 215 0.000385
+127.0.0.1 - - [01/Apr/2021 11:24:53] "POST /socket.io/?EIO=3&transport=polling&t=1617272693666-279&sid=691fe6f3ea1d4968becf35b93db707ee HTTP/1.1" 400 239 0.000441
+127.0.0.1 - - [01/Apr/2021 11:24:55] "GET /socket.io/?EIO=3&transport=polling&t=1617272695045-282&sid=c3c6d9de3bd6439c86b55a41f0ea864d HTTP/1.1" 400 218 0.000443
+127.0.0.1 - - [01/Apr/2021 11:24:55] "POST /socket.io/?EIO=3&transport=polling&t=1617272695068-283&sid=c3c6d9de3bd6439c86b55a41f0ea864d HTTP/1.1" 400 239 0.000454
+127.0.0.1 - - [01/Apr/2021 11:24:56] "GET /socket.io/?EIO=3&transport=polling&t=1617272696724-286&sid=8fa026daf0e24d9c8f68be67d769301e HTTP/1.1" 400 218 0.000907
+127.0.0.1 - - [01/Apr/2021 11:24:56] "POST /socket.io/?EIO=3&transport=polling&t=1617272696767-287&sid=8fa026daf0e24d9c8f68be67d769301e HTTP/1.1" 400 239 0.000588
+127.0.0.1 - - [01/Apr/2021 11:24:58] "GET / HTTP/1.1" 200 2897 0.001646
+127.0.0.1 - - [01/Apr/2021 11:24:58] "GET /socket.io/?EIO=3&transport=polling&t=1617272698117-0 HTTP/1.1" 200 381 0.000820
+127.0.0.1 - - [01/Apr/2021 11:24:59] "POST /socket.io/?EIO=3&transport=polling&t=1617272698136-1&sid=5b83b3bc1b024781a7127a71feb8cc9a HTTP/1.1" 200 220 0.880997
+127.0.0.1 - - [01/Apr/2021 11:25:01] "GET /socket.io/?EIO=3&transport=polling&t=1617272700428-4 HTTP/1.1" 200 381 0.001370
+127.0.0.1 - - [01/Apr/2021 11:25:05] "POST /socket.io/?EIO=3&transport=polling&t=1617272701290-5&sid=2a71156646eb404da1cd0f597cf69c55 HTTP/1.1" 200 220 4.222865
+127.0.0.1 - - [01/Apr/2021 11:25:28] "POST /socket.io/?EIO=3&transport=polling&t=1617272728045-28&sid=8f19d41581fb48c99f692eecbc2d5d5c HTTP/1.1" 400 239 0.000954
+127.0.0.1 - - [01/Apr/2021 11:25:28] "POST /socket.io/?EIO=3&transport=polling&t=1617272728157-29&sid=8f19d41581fb48c99f692eecbc2d5d5c HTTP/1.1" 400 239 0.000747
+127.0.0.1 - - [01/Apr/2021 11:25:29] "GET /socket.io/?EIO=3&transport=polling&t=1617272729060-30 HTTP/1.1" 200 381 0.001591
+127.0.0.1 - - [01/Apr/2021 11:25:30] "POST /socket.io/?EIO=3&transport=polling&t=1617272729607-31&sid=fd093d4a5dcc4332a7b9be30cb61ba89 HTTP/1.1" 200 220 0.833338
+(28307) accepted ('127.0.0.1', 36720)
+(28307) accepted ('127.0.0.1', 36728)
+127.0.0.1 - - [01/Apr/2021 11:25:32] "GET /socket.io/?EIO=3&transport=polling&t=1617272731868-36&sid=fee81dce28ff45c3808576bbc81308e5 HTTP/1.1" 400 218 0.000424
+127.0.0.1 - - [01/Apr/2021 11:25:32] "GET /socket.io/?EIO=3&transport=websocket&sid=fee81dce28ff45c3808576bbc81308e5 HTTP/1.1" 400 215 0.000407
+127.0.0.1 - - [01/Apr/2021 11:25:32] "POST /socket.io/?EIO=3&transport=polling&t=1617272732719-37&sid=fee81dce28ff45c3808576bbc81308e5 HTTP/1.1" 400 239 0.000433
+127.0.0.1 - - [01/Apr/2021 11:25:34] "GET /socket.io/?EIO=3&transport=polling&t=1617272733770-40&sid=f0bc69de6df1444cb36eca2f009f3ccc HTTP/1.1" 400 218 0.001609
+127.0.0.1 - - [01/Apr/2021 11:25:34] "POST /socket.io/?EIO=3&transport=polling&t=1617272734077-41&sid=f0bc69de6df1444cb36eca2f009f3ccc HTTP/1.1" 400 239 0.001094
+127.0.0.1 - - [01/Apr/2021 11:25:35] "GET /socket.io/?EIO=3&transport=polling&t=1617272734678-42 HTTP/1.1" 200 381 0.000710
+127.0.0.1 - - [01/Apr/2021 11:25:36] "POST /socket.io/?EIO=3&transport=polling&t=1617272735544-43&sid=80022d2e50bf488fb0365ede58c50485 HTTP/1.1" 200 220 0.851362
+127.0.0.1 - - [01/Apr/2021 11:25:37] "GET /socket.io/?EIO=3&transport=polling&t=1617272736654-46 HTTP/1.1" 200 381 0.001347
+127.0.0.1 - - [01/Apr/2021 11:25:38] "POST /socket.io/?EIO=3&transport=polling&t=1617272737391-47&sid=8a3c0bdcc5024b12a68128dbb0231f69 HTTP/1.1" 200 220 0.821890
+127.0.0.1 - - [01/Apr/2021 11:25:39] "GET /socket.io/?EIO=3&transport=polling&t=1617272738285-50 HTTP/1.1" 200 381 0.000773
+127.0.0.1 - - [01/Apr/2021 11:25:40] "POST /socket.io/?EIO=3&transport=polling&t=1617272739116-51&sid=a6432a3905c149d5a4a6549fd353c027 HTTP/1.1" 200 220 0.873646
+127.0.0.1 - - [01/Apr/2021 11:25:41] "GET /socket.io/?EIO=3&transport=polling&t=1617272741190-54 HTTP/1.1" 200 381 0.000747
+127.0.0.1 - - [01/Apr/2021 11:25:42] "POST /socket.io/?EIO=3&transport=polling&t=1617272741212-55&sid=73d8c439e07b4b3ca5e50b20bfaa5f59 HTTP/1.1" 200 220 0.866287
+127.0.0.1 - - [01/Apr/2021 11:25:43] "GET /socket.io/?EIO=3&transport=polling&t=1617272742496-60&sid=f5e3eda3253b40ef850e2c69e1707531 HTTP/1.1" 400 218 0.000456
+127.0.0.1 - - [01/Apr/2021 11:25:43] "POST /socket.io/?EIO=3&transport=polling&t=1617272742963-61&sid=f5e3eda3253b40ef850e2c69e1707531 HTTP/1.1" 400 239 0.000430
+127.0.0.1 - - [01/Apr/2021 11:25:44] "GET /socket.io/?EIO=3&transport=polling&t=1617272743645-62 HTTP/1.1" 200 381 0.001239
+127.0.0.1 - - [01/Apr/2021 11:25:46] "POST /socket.io/?EIO=3&transport=polling&t=1617272744316-63&sid=62c4140ff1e841008df70aa508ca9657 HTTP/1.1" 200 220 1.863099
+(28307) accepted ('127.0.0.1', 36790)
+(28307) accepted ('127.0.0.1', 36792)
+127.0.0.1 - - [01/Apr/2021 11:39:48] "GET /socket.io/?EIO=3&transport=websocket&sid=149196541d2c4279822f9bb294f2c34d HTTP/1.1" 400 215 0.000398
+127.0.0.1 - - [01/Apr/2021 11:39:48] "GET /socket.io/?EIO=3&transport=polling&t=1617273588397-2&sid=149196541d2c4279822f9bb294f2c34d HTTP/1.1" 400 218 0.000375
+127.0.0.1 - - [01/Apr/2021 11:39:49] "POST /socket.io/?EIO=3&transport=polling&t=1617273588943-3&sid=149196541d2c4279822f9bb294f2c34d HTTP/1.1" 400 239 0.000406
+127.0.0.1 - - [01/Apr/2021 11:39:50] "GET /socket.io/?EIO=3&transport=polling&t=1617273590218-6&sid=0851a1ee126a4032846b8a485c03f993 HTTP/1.1" 400 218 0.000695
+127.0.0.1 - - [01/Apr/2021 11:39:50] "POST /socket.io/?EIO=3&transport=polling&t=1617273590265-7&sid=0851a1ee126a4032846b8a485c03f993 HTTP/1.1" 400 239 0.000711
+127.0.0.1 - - [01/Apr/2021 11:39:52] "GET /socket.io/?EIO=3&transport=polling&t=1617273592018-10&sid=47c7521ffbb845cba96cf8332d8edf7b HTTP/1.1" 400 218 0.000766
+127.0.0.1 - - [01/Apr/2021 11:39:52] "POST /socket.io/?EIO=3&transport=polling&t=1617273592039-11&sid=47c7521ffbb845cba96cf8332d8edf7b HTTP/1.1" 400 239 0.001943
+(28307) accepted ('127.0.0.1', 36808)
+127.0.0.1 - - [01/Apr/2021 11:39:52] "GET /socket.io/?EIO=3&transport=websocket&sid=47c7521ffbb845cba96cf8332d8edf7b HTTP/1.1" 400 215 0.000624
+127.0.0.1 - - [01/Apr/2021 11:39:54] "GET /socket.io/?EIO=3&transport=polling&t=1617273593758-14&sid=ca59bd7899ac41878fae4d379f6e8bdc HTTP/1.1" 400 218 0.000935
+(28307) accepted ('127.0.0.1', 36828)
+127.0.0.1 - - [01/Apr/2021 11:39:55] "GET /socket.io/?EIO=3&transport=websocket&sid=c7b2d411ee964b248729b100d493f38c HTTP/1.1" 400 215 0.000431
+(28307) accepted ('127.0.0.1', 36902)
+127.0.0.1 - - [01/Apr/2021 11:59:11] "GET /socket.io/?EIO=3&transport=polling&t=1617274751382-2&sid=1df091c2cc4d4464864e6ba32ab05077 HTTP/1.1" 400 218 0.000454
+127.0.0.1 - - [01/Apr/2021 11:59:11] "POST /socket.io/?EIO=3&transport=polling&t=1617274751629-3&sid=1df091c2cc4d4464864e6ba32ab05077 HTTP/1.1" 400 238 0.000474
+127.0.0.1 - - [01/Apr/2021 11:59:13] "GET /socket.io/?EIO=3&transport=polling&t=1617274752214-4 HTTP/1.1" 200 381 0.000744
+127.0.0.1 - - [01/Apr/2021 11:59:13] "POST /socket.io/?EIO=3&transport=polling&t=1617274752998-5&sid=83e4d4a57683476793b10f9494176b67 HTTP/1.1" 200 219 0.898997
+127.0.0.1 - - [01/Apr/2021 11:59:21] "GET /all HTTP/1.1" 200 33731 0.392186
+127.0.0.1 - - [01/Apr/2021 11:59:26] "GET / HTTP/1.1" 200 2897 0.001646
+127.0.0.1 - - [01/Apr/2021 11:59:26] "GET /socket.io/?EIO=3&transport=polling&t=1617274766454-0 HTTP/1.1" 200 381 0.000756
+127.0.0.1 - - [01/Apr/2021 11:59:27] "POST /socket.io/?EIO=3&transport=polling&t=1617274766466-1&sid=97c4a13b067e44ad9d07fd561c53f0fd HTTP/1.1" 200 219 0.892425
+(28307) accepted ('127.0.0.1', 36926)
+127.0.0.1 - - [01/Apr/2021 11:59:28] "GET /socket.io/?EIO=3&transport=polling&t=1617274768202-4 HTTP/1.1" 200 381 0.001310
+127.0.0.1 - - [01/Apr/2021 11:59:29] "POST /socket.io/?EIO=3&transport=polling&t=1617274768271-5&sid=8a5fc765b6034b829f77fee85cc03262 HTTP/1.1" 200 219 0.817847
+127.0.0.1 - - [01/Apr/2021 11:59:30] "GET /socket.io/?EIO=3&transport=polling&t=1617274769653-8 HTTP/1.1" 200 381 0.001160
+127.0.0.1 - - [01/Apr/2021 11:59:31] "POST /socket.io/?EIO=3&transport=polling&t=1617274769958-9&sid=7923727844d54b5c88e5a9746d2eb70d HTTP/1.1" 200 219 1.113626
+(28307) accepted ('127.0.0.1', 36942)
+(28307) accepted ('127.0.0.1', 36952)
+(28307) accepted ('127.0.0.1', 36954)
+127.0.0.1 - - [01/Apr/2021 11:59:32] "GET /socket.io/?EIO=3&transport=polling&t=1617274770977-14&sid=b066612919074640a8f01f831e2425ca HTTP/1.1" 400 218 0.000786
+127.0.0.1 - - [01/Apr/2021 11:59:32] "GET /socket.io/?EIO=3&transport=websocket&sid=b066612919074640a8f01f831e2425ca HTTP/1.1" 400 214 0.000759
+127.0.0.1 - - [01/Apr/2021 11:59:32] "POST /socket.io/?EIO=3&transport=polling&t=1617274771962-15&sid=b066612919074640a8f01f831e2425ca HTTP/1.1" 400 238 0.000412
+127.0.0.1 - - [01/Apr/2021 11:59:33] "GET /socket.io/?EIO=3&transport=polling&t=1617274772665-16 HTTP/1.1" 200 381 0.001302
+127.0.0.1 - - [01/Apr/2021 11:59:34] "POST /socket.io/?EIO=3&transport=polling&t=1617274773332-17&sid=6f1d0e68702447db8978e02da3e1a7ce HTTP/1.1" 200 219 0.840685
+127.0.0.1 - - [01/Apr/2021 11:59:35] "GET /socket.io/?EIO=3&transport=polling&t=1617274775019-20 HTTP/1.1" 200 381 0.001544
+127.0.0.1 - - [01/Apr/2021 11:59:36] "POST /socket.io/?EIO=3&transport=polling&t=1617274775069-21&sid=ad26988c290c4852a61510b9a203b117 HTTP/1.1" 200 219 0.857784
+127.0.0.1 - - [01/Apr/2021 11:59:36] "GET /socket.io/?EIO=3&transport=polling&t=1617274776557-24 HTTP/1.1" 200 381 0.001098
+127.0.0.1 - - [01/Apr/2021 11:59:37] "POST /socket.io/?EIO=3&transport=polling&t=1617274776884-25&sid=45ccca989be54d8b8e6e61ccab085150 HTTP/1.1" 200 219 0.853042
+127.0.0.1 - - [01/Apr/2021 11:59:38] "GET /socket.io/?EIO=3&transport=polling&t=1617274778201-28 HTTP/1.1" 200 381 0.000719
+127.0.0.1 - - [01/Apr/2021 11:59:39] "POST /socket.io/?EIO=3&transport=polling&t=1617274778694-29&sid=4ae0e2a0c8ec461296dcca08265ad88b HTTP/1.1" 200 219 0.774546
+127.0.0.1 - - [01/Apr/2021 11:59:40] "POST /socket.io/?EIO=3&transport=polling&t=1617274779516-31&sid=4ae0e2a0c8ec461296dcca08265ad88b HTTP/1.1" 200 219 0.002666
+127.0.0.1 - - [01/Apr/2021 11:59:40] "GET /socket.io/?EIO=3&transport=polling&t=1617274780489-32 HTTP/1.1" 200 381 0.001235
+127.0.0.1 - - [01/Apr/2021 11:59:41] "POST /socket.io/?EIO=3&transport=polling&t=1617274780506-33&sid=ca35e497885c4933b6deaea150a08369 HTTP/1.1" 200 219 0.808500
+127.0.0.1 - - [01/Apr/2021 11:59:42] "GET /socket.io/?EIO=3&transport=polling&t=1617274782068-36 HTTP/1.1" 200 381 0.000720
+127.0.0.1 - - [01/Apr/2021 11:59:43] "POST /socket.io/?EIO=3&transport=polling&t=1617274782188-37&sid=fa832d26c9644d19b1645de5d47ec832 HTTP/1.1" 200 219 0.791799
+127.0.0.1 - - [01/Apr/2021 11:59:43] "GET /socket.io/?EIO=3&transport=polling&t=1617274783714-42&sid=fc280f633f3146d28431ce58a787426c HTTP/1.1" 400 218 0.000456
+127.0.0.1 - - [01/Apr/2021 11:59:43] "POST /socket.io/?EIO=3&transport=polling&t=1617274783871-43&sid=fc280f633f3146d28431ce58a787426c HTTP/1.1" 400 238 0.000508
+127.0.0.1 - - [01/Apr/2021 11:59:45] "GET /socket.io/?EIO=3&transport=polling&t=1617274785389-46&sid=976b7fa1a2db47aea91ad0e93819828b HTTP/1.1" 400 218 0.001119
+127.0.0.1 - - [01/Apr/2021 11:59:45] "POST /socket.io/?EIO=3&transport=polling&t=1617274785408-47&sid=976b7fa1a2db47aea91ad0e93819828b HTTP/1.1" 400 238 0.000461
+127.0.0.1 - - [01/Apr/2021 11:59:48] "GET /socket.io/?EIO=3&transport=polling&t=1617274787275-50&sid=6749ac325dd34e7f97600fa6b4c85986 HTTP/1.1" 400 218 0.000391
+127.0.0.1 - - [01/Apr/2021 11:59:48] "POST /socket.io/?EIO=3&transport=polling&t=1617274787958-51&sid=6749ac325dd34e7f97600fa6b4c85986 HTTP/1.1" 400 238 0.000435
+127.0.0.1 - - [01/Apr/2021 11:59:49] "GET /socket.io/?EIO=3&transport=polling&t=1617274789015-54&sid=a01bf3374e19460787e51d07803a369f HTTP/1.1" 400 218 0.000424
+127.0.0.1 - - [01/Apr/2021 11:59:49] "POST /socket.io/?EIO=3&transport=polling&t=1617274789324-55&sid=a01bf3374e19460787e51d07803a369f HTTP/1.1" 400 238 0.000465
+127.0.0.1 - - [01/Apr/2021 11:59:50] "GET /socket.io/?EIO=3&transport=polling&t=1617274789889-56 HTTP/1.1" 200 381 0.001529
+127.0.0.1 - - [01/Apr/2021 11:59:51] "POST /socket.io/?EIO=3&transport=polling&t=1617274790675-57&sid=6abc3fe55f7540a58b4630d756b657cb HTTP/1.1" 200 219 1.200047
+127.0.0.1 - - [01/Apr/2021 11:59:52] "GET /socket.io/?EIO=3&transport=polling&t=1617274792411-60 HTTP/1.1" 200 381 0.001573
+127.0.0.1 - - [01/Apr/2021 11:59:53] "POST /socket.io/?EIO=3&transport=polling&t=1617274792823-61&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.860452
+127.0.0.1 - - [01/Apr/2021 11:59:54] "GET /socket.io/?EIO=3&transport=polling&t=1617274792823-62&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 3917 1.753499
+127.0.0.1 - - [01/Apr/2021 11:59:56] "GET /socket.io/?EIO=3&transport=polling&t=1617274794687-63&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.254611
+127.0.0.1 - - [01/Apr/2021 11:59:57] "GET /socket.io/?EIO=3&transport=polling&t=1617274795957-64&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.341230
+127.0.0.1 - - [01/Apr/2021 11:59:58] "GET /socket.io/?EIO=3&transport=polling&t=1617274797329-65&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.319829
+127.0.0.1 - - [01/Apr/2021 12:00:01] "GET /socket.io/?EIO=3&transport=polling&t=1617274798762-66&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 3854 2.784144
+127.0.0.1 - - [01/Apr/2021 12:00:02] "GET /socket.io/?EIO=3&transport=polling&t=1617274801598-67&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.306405
+127.0.0.1 - - [01/Apr/2021 12:00:04] "GET /socket.io/?EIO=3&transport=polling&t=1617274802920-68&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.332385
+127.0.0.1 - - [01/Apr/2021 12:00:05] "GET /socket.io/?EIO=3&transport=polling&t=1617274804292-69&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.330259
+127.0.0.1 - - [01/Apr/2021 12:00:07] "GET /socket.io/?EIO=3&transport=polling&t=1617274805729-70&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.245696
+127.0.0.1 - - [01/Apr/2021 12:00:08] "GET /socket.io/?EIO=3&transport=polling&t=1617274806995-71&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.338242
+127.0.0.1 - - [01/Apr/2021 12:00:09] "GET /socket.io/?EIO=3&transport=polling&t=1617274808389-72&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.302752
+127.0.0.1 - - [01/Apr/2021 12:00:11] "GET /socket.io/?EIO=3&transport=polling&t=1617274809720-73&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.331272
+127.0.0.1 - - [01/Apr/2021 12:00:12] "GET /socket.io/?EIO=3&transport=polling&t=1617274811072-74&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.341540
+127.0.0.1 - - [01/Apr/2021 12:00:13] "GET /socket.io/?EIO=3&transport=polling&t=1617274812486-75&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.288887
+127.0.0.1 - - [01/Apr/2021 12:00:15] "GET /socket.io/?EIO=3&transport=polling&t=1617274813816-76&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.315802
+127.0.0.1 - - [01/Apr/2021 12:00:16] "GET /socket.io/?EIO=3&transport=polling&t=1617274815249-77&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.245750
+127.0.0.1 - - [01/Apr/2021 12:00:17] "POST /socket.io/?EIO=3&transport=polling&t=1617274817826-79&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.001332
+127.0.0.1 - - [01/Apr/2021 12:00:17] "GET /socket.io/?EIO=3&transport=polling&t=1617274816514-78&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 314 1.355443
+127.0.0.1 - - [01/Apr/2021 12:00:19] "GET /socket.io/?EIO=3&transport=polling&t=1617274817888-80&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.321545
+127.0.0.1 - - [01/Apr/2021 12:00:20] "GET /socket.io/?EIO=3&transport=polling&t=1617274819242-81&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.334295
+127.0.0.1 - - [01/Apr/2021 12:00:22] "GET /socket.io/?EIO=3&transport=polling&t=1617274820595-82&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.340023
+127.0.0.1 - - [01/Apr/2021 12:00:23] "GET /socket.io/?EIO=3&transport=polling&t=1617274821952-83&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.342027
+127.0.0.1 - - [01/Apr/2021 12:00:24] "GET /socket.io/?EIO=3&transport=polling&t=1617274823309-84&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.343779
+127.0.0.1 - - [01/Apr/2021 12:00:26] "GET /socket.io/?EIO=3&transport=polling&t=1617274824668-85&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.344140
+127.0.0.1 - - [01/Apr/2021 12:00:27] "GET /socket.io/?EIO=3&transport=polling&t=1617274826028-86&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.349590
+127.0.0.1 - - [01/Apr/2021 12:00:28] "GET /socket.io/?EIO=3&transport=polling&t=1617274827393-87&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.343607
+127.0.0.1 - - [01/Apr/2021 12:00:30] "GET /socket.io/?EIO=3&transport=polling&t=1617274828768-88&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.325037
+127.0.0.1 - - [01/Apr/2021 12:00:31] "GET /socket.io/?EIO=3&transport=polling&t=1617274830108-89&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.346609
+127.0.0.1 - - [01/Apr/2021 12:00:32] "GET /socket.io/?EIO=3&transport=polling&t=1617274831746-90&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.040762
+127.0.0.1 - - [01/Apr/2021 12:00:34] "GET /socket.io/?EIO=3&transport=polling&t=1617274832842-91&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.329433
+127.0.0.1 - - [01/Apr/2021 12:00:35] "GET /socket.io/?EIO=3&transport=polling&t=1617274834188-92&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.349455
+127.0.0.1 - - [01/Apr/2021 12:00:36] "GET /socket.io/?EIO=3&transport=polling&t=1617274835554-93&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.340523
+127.0.0.1 - - [01/Apr/2021 12:00:38] "GET /socket.io/?EIO=3&transport=polling&t=1617274836914-94&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.319127
+127.0.0.1 - - [01/Apr/2021 12:00:39] "GET /socket.io/?EIO=3&transport=polling&t=1617274838289-95&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.319824
+127.0.0.1 - - [01/Apr/2021 12:00:41] "GET /socket.io/?EIO=3&transport=polling&t=1617274839626-96&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.346347
+127.0.0.1 - - [01/Apr/2021 12:00:42] "GET /socket.io/?EIO=3&transport=polling&t=1617274840992-97&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.340271
+127.0.0.1 - - [01/Apr/2021 12:00:43] "POST /socket.io/?EIO=3&transport=polling&t=1617274842890-99&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.001669
+127.0.0.1 - - [01/Apr/2021 12:00:43] "GET /socket.io/?EIO=3&transport=polling&t=1617274842385-98&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 314 1.312214
+127.0.0.1 - - [01/Apr/2021 12:00:45] "GET /socket.io/?EIO=3&transport=polling&t=1617274843819-100&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.233502
+127.0.0.1 - - [01/Apr/2021 12:00:46] "GET /socket.io/?EIO=3&transport=polling&t=1617274845069-101&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.342769
+127.0.0.1 - - [01/Apr/2021 12:00:47] "GET /socket.io/?EIO=3&transport=polling&t=1617274846481-102&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.291356
+127.0.0.1 - - [01/Apr/2021 12:00:49] "GET /socket.io/?EIO=3&transport=polling&t=1617274847816-103&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.317781
+127.0.0.1 - - [01/Apr/2021 12:00:50] "GET /socket.io/?EIO=3&transport=polling&t=1617274849246-104&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.244348
+127.0.0.1 - - [01/Apr/2021 12:00:51] "GET /socket.io/?EIO=3&transport=polling&t=1617274850581-105&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.268670
+127.0.0.1 - - [01/Apr/2021 12:00:53] "GET /socket.io/?EIO=3&transport=polling&t=1617274851881-106&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.331646
+127.0.0.1 - - [01/Apr/2021 12:00:54] "GET /socket.io/?EIO=3&transport=polling&t=1617274853229-107&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.339814
+127.0.0.1 - - [01/Apr/2021 12:00:56] "GET /socket.io/?EIO=3&transport=polling&t=1617274854676-108&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.252804
+127.0.0.1 - - [01/Apr/2021 12:00:57] "GET /socket.io/?EIO=3&transport=polling&t=1617274855944-109&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.350525
+127.0.0.1 - - [01/Apr/2021 12:00:58] "GET /socket.io/?EIO=3&transport=polling&t=1617274857308-110&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.343466
+127.0.0.1 - - [01/Apr/2021 12:01:00] "GET /socket.io/?EIO=3&transport=polling&t=1617274858668-111&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.340909
+127.0.0.1 - - [01/Apr/2021 12:01:01] "GET /socket.io/?EIO=3&transport=polling&t=1617274860031-112&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.339608
+127.0.0.1 - - [01/Apr/2021 12:01:02] "GET /socket.io/?EIO=3&transport=polling&t=1617274861432-113&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.341208
+127.0.0.1 - - [01/Apr/2021 12:01:04] "GET /socket.io/?EIO=3&transport=polling&t=1617274862788-114&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.380780
+127.0.0.1 - - [01/Apr/2021 12:01:05] "GET /socket.io/?EIO=3&transport=polling&t=1617274864300-115&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.229023
+127.0.0.1 - - [01/Apr/2021 12:01:06] "GET /socket.io/?EIO=3&transport=polling&t=1617274865545-116&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.345680
+127.0.0.1 - - [01/Apr/2021 12:01:08] "GET /socket.io/?EIO=3&transport=polling&t=1617274866906-117&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.340780
+127.0.0.1 - - [01/Apr/2021 12:01:09] "POST /socket.io/?EIO=3&transport=polling&t=1617274868821-119&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.001057
+127.0.0.1 - - [01/Apr/2021 12:01:09] "GET /socket.io/?EIO=3&transport=polling&t=1617274868267-118&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 314 1.349609
+127.0.0.1 - - [01/Apr/2021 12:01:11] "GET /socket.io/?EIO=3&transport=polling&t=1617274869732-120&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.237563
+127.0.0.1 - - [01/Apr/2021 12:01:12] "GET /socket.io/?EIO=3&transport=polling&t=1617274870990-121&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.339371
+127.0.0.1 - - [01/Apr/2021 12:01:13] "GET /socket.io/?EIO=3&transport=polling&t=1617274872389-122&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.302198
+127.0.0.1 - - [01/Apr/2021 12:01:15] "GET /socket.io/?EIO=3&transport=polling&t=1617274873709-123&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.339450
+127.0.0.1 - - [01/Apr/2021 12:01:16] "GET /socket.io/?EIO=3&transport=polling&t=1617274875066-124&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.341427
+127.0.0.1 - - [01/Apr/2021 12:01:17] "GET /socket.io/?EIO=3&transport=polling&t=1617274876488-125&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.284480
+127.0.0.1 - - [01/Apr/2021 12:01:19] "GET /socket.io/?EIO=3&transport=polling&t=1617274877824-126&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.305666
+127.0.0.1 - - [01/Apr/2021 12:01:20] "GET /socket.io/?EIO=3&transport=polling&t=1617274879152-127&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.337986
+127.0.0.1 - - [01/Apr/2021 12:01:21] "GET /socket.io/?EIO=3&transport=polling&t=1617274880505-128&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.343062
+127.0.0.1 - - [01/Apr/2021 12:01:23] "GET /socket.io/?EIO=3&transport=polling&t=1617274881868-129&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.384223
+127.0.0.1 - - [01/Apr/2021 12:01:24] "GET /socket.io/?EIO=3&transport=polling&t=1617274883266-130&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.392817
+127.0.0.1 - - [01/Apr/2021 12:01:26] "GET /socket.io/?EIO=3&transport=polling&t=1617274884756-131&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.257227
+127.0.0.1 - - [01/Apr/2021 12:01:27] "GET /socket.io/?EIO=3&transport=polling&t=1617274886026-132&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341420
+127.0.0.1 - - [01/Apr/2021 12:01:28] "GET /socket.io/?EIO=3&transport=polling&t=1617274887386-133&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.355387
+127.0.0.1 - - [01/Apr/2021 12:01:30] "GET /socket.io/?EIO=3&transport=polling&t=1617274888774-134&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.315238
+127.0.0.1 - - [01/Apr/2021 12:01:31] "GET /socket.io/?EIO=3&transport=polling&t=1617274890107-135&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.340521
+127.0.0.1 - - [01/Apr/2021 12:01:32] "GET /socket.io/?EIO=3&transport=polling&t=1617274891537-136&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.271649
+127.0.0.1 - - [01/Apr/2021 12:01:34] "GET /socket.io/?EIO=3&transport=polling&t=1617274892825-137&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.345796
+127.0.0.1 - - [01/Apr/2021 12:01:35] "POST /socket.io/?EIO=3&transport=polling&t=1617274895134-139&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.001378
+127.0.0.1 - - [01/Apr/2021 12:01:35] "GET /socket.io/?EIO=3&transport=polling&t=1617274894189-138&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 314 1.354326
+127.0.0.1 - - [01/Apr/2021 12:01:36] "GET /socket.io/?EIO=3&transport=polling&t=1617274895559-140&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.327527
+127.0.0.1 - - [01/Apr/2021 12:01:38] "GET /socket.io/?EIO=3&transport=polling&t=1617274896904-141&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.348798
+127.0.0.1 - - [01/Apr/2021 12:01:39] "GET /socket.io/?EIO=3&transport=polling&t=1617274898295-142&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.315344
+127.0.0.1 - - [01/Apr/2021 12:01:41] "GET /socket.io/?EIO=3&transport=polling&t=1617274899626-143&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343913
+127.0.0.1 - - [01/Apr/2021 12:01:42] "GET /socket.io/?EIO=3&transport=polling&t=1617274900984-144&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.344963
+127.0.0.1 - - [01/Apr/2021 12:01:43] "GET /socket.io/?EIO=3&transport=polling&t=1617274902392-145&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.300851
+127.0.0.1 - - [01/Apr/2021 12:01:45] "GET /socket.io/?EIO=3&transport=polling&t=1617274903723-146&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.321928
+127.0.0.1 - - [01/Apr/2021 12:01:46] "GET /socket.io/?EIO=3&transport=polling&t=1617274905068-147&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.340375
+127.0.0.1 - - [01/Apr/2021 12:01:47] "GET /socket.io/?EIO=3&transport=polling&t=1617274906487-148&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.281136
+127.0.0.1 - - [01/Apr/2021 12:01:49] "GET /socket.io/?EIO=3&transport=polling&t=1617274907815-149&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.311953
+127.0.0.1 - - [01/Apr/2021 12:01:50] "GET /socket.io/?EIO=3&transport=polling&t=1617274909206-150&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.273749
+127.0.0.1 - - [01/Apr/2021 12:01:51] "GET /socket.io/?EIO=3&transport=polling&t=1617274910507-151&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341312
+127.0.0.1 - - [01/Apr/2021 12:01:53] "GET /socket.io/?EIO=3&transport=polling&t=1617274911870-152&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.331257
+127.0.0.1 - - [01/Apr/2021 12:01:54] "GET /socket.io/?EIO=3&transport=polling&t=1617274913249-153&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.319590
+127.0.0.1 - - [01/Apr/2021 12:01:56] "GET /socket.io/?EIO=3&transport=polling&t=1617274914680-154&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.245049
+127.0.0.1 - - [01/Apr/2021 12:01:57] "GET /socket.io/?EIO=3&transport=polling&t=1617274915943-155&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.348218
+127.0.0.1 - - [01/Apr/2021 12:01:58] "GET /socket.io/?EIO=3&transport=polling&t=1617274917343-156&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.303518
+127.0.0.1 - - [01/Apr/2021 12:02:00] "GET /socket.io/?EIO=3&transport=polling&t=1617274918776-157&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.244301
+127.0.0.1 - - [01/Apr/2021 12:02:01] "POST /socket.io/?EIO=3&transport=polling&t=1617274921111-159&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.001056
+127.0.0.1 - - [01/Apr/2021 12:02:01] "GET /socket.io/?EIO=3&transport=polling&t=1617274920036-158&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 311 1.337182
+127.0.0.1 - - [01/Apr/2021 12:02:02] "GET /socket.io/?EIO=3&transport=polling&t=1617274921392-160&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.329274
+127.0.0.1 - - [01/Apr/2021 12:02:04] "GET /socket.io/?EIO=3&transport=polling&t=1617274922769-161&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.320027
+127.0.0.1 - - [01/Apr/2021 12:02:05] "GET /socket.io/?EIO=3&transport=polling&t=1617274924203-162&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.246652
+127.0.0.1 - - [01/Apr/2021 12:02:06] "GET /socket.io/?EIO=3&transport=polling&t=1617274925467-163&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.350223
+127.0.0.1 - - [01/Apr/2021 12:02:08] "GET /socket.io/?EIO=3&transport=polling&t=1617274926835-164&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.331428
+127.0.0.1 - - [01/Apr/2021 12:02:09] "GET /socket.io/?EIO=3&transport=polling&t=1617274928186-165&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.336415
+127.0.0.1 - - [01/Apr/2021 12:02:10] "GET /socket.io/?EIO=3&transport=polling&t=1617274929631-166&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.259806
+127.0.0.1 - - [01/Apr/2021 12:02:12] "GET /socket.io/?EIO=3&transport=polling&t=1617274930904-167&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.347313
+127.0.0.1 - - [01/Apr/2021 12:02:13] "GET /socket.io/?EIO=3&transport=polling&t=1617274932293-168&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.314283
+127.0.0.1 - - [01/Apr/2021 12:02:15] "GET /socket.io/?EIO=3&transport=polling&t=1617274933726-169&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.253406
+127.0.0.1 - - [01/Apr/2021 12:02:16] "GET /socket.io/?EIO=3&transport=polling&t=1617274934994-170&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338431
+127.0.0.1 - - [01/Apr/2021 12:02:17] "GET /socket.io/?EIO=3&transport=polling&t=1617274936385-171&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.308845
+127.0.0.1 - - [01/Apr/2021 12:02:19] "GET /socket.io/?EIO=3&transport=polling&t=1617274937708-172&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.339288
+127.0.0.1 - - [01/Apr/2021 12:02:20] "GET /socket.io/?EIO=3&transport=polling&t=1617274939153-173&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.256139
+127.0.0.1 - - [01/Apr/2021 12:02:21] "GET /socket.io/?EIO=3&transport=polling&t=1617274940424-174&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346595
+127.0.0.1 - - [01/Apr/2021 12:02:23] "GET /socket.io/?EIO=3&transport=polling&t=1617274941786-175&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.340960
+127.0.0.1 - - [01/Apr/2021 12:02:24] "GET /socket.io/?EIO=3&transport=polling&t=1617274943250-176&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.239135
+127.0.0.1 - - [01/Apr/2021 12:02:25] "GET /socket.io/?EIO=3&transport=polling&t=1617274944506-177&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.353559
+127.0.0.1 - - [01/Apr/2021 12:02:27] "POST /socket.io/?EIO=3&transport=polling&t=1617274946924-179&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000983
+127.0.0.1 - - [01/Apr/2021 12:02:27] "GET /socket.io/?EIO=3&transport=polling&t=1617274945873-178&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 311 1.350702
+127.0.0.1 - - [01/Apr/2021 12:02:28] "GET /socket.io/?EIO=3&transport=polling&t=1617274947240-180&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.325432
+127.0.0.1 - - [01/Apr/2021 12:02:30] "GET /socket.io/?EIO=3&transport=polling&t=1617274948584-181&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.355949
+127.0.0.1 - - [01/Apr/2021 12:02:31] "GET /socket.io/?EIO=3&transport=polling&t=1617274949954-182&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.335726
+127.0.0.1 - - [01/Apr/2021 12:02:32] "GET /socket.io/?EIO=3&transport=polling&t=1617274951337-183&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.311221
+127.0.0.1 - - [01/Apr/2021 12:02:34] "GET /socket.io/?EIO=3&transport=polling&t=1617274952774-184&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.243659
+127.0.0.1 - - [01/Apr/2021 12:02:35] "GET /socket.io/?EIO=3&transport=polling&t=1617274954034-185&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.335114
+127.0.0.1 - - [01/Apr/2021 12:02:36] "GET /socket.io/?EIO=3&transport=polling&t=1617274955436-186&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.294477
+127.0.0.1 - - [01/Apr/2021 12:02:38] "GET /socket.io/?EIO=3&transport=polling&t=1617274956745-187&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343046
+127.0.0.1 - - [01/Apr/2021 12:02:39] "GET /socket.io/?EIO=3&transport=polling&t=1617274958105-188&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341625
+127.0.0.1 - - [01/Apr/2021 12:02:40] "GET /socket.io/?EIO=3&transport=polling&t=1617274959468-189&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.340291
+127.0.0.1 - - [01/Apr/2021 12:02:42] "GET /socket.io/?EIO=3&transport=polling&t=1617274960825-190&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346295
+127.0.0.1 - - [01/Apr/2021 12:02:43] "GET /socket.io/?EIO=3&transport=polling&t=1617274962361-191&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.166164
+127.0.0.1 - - [01/Apr/2021 12:02:44] "GET /socket.io/?EIO=3&transport=polling&t=1617274963546-192&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.340086
+127.0.0.1 - - [01/Apr/2021 12:02:46] "GET /socket.io/?EIO=3&transport=polling&t=1617274964902-193&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.351666
+127.0.0.1 - - [01/Apr/2021 12:02:47] "GET /socket.io/?EIO=3&transport=polling&t=1617274966267-194&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341857
+127.0.0.1 - - [01/Apr/2021 12:02:49] "GET /socket.io/?EIO=3&transport=polling&t=1617274967667-195&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.301808
+127.0.0.1 - - [01/Apr/2021 12:02:50] "GET /socket.io/?EIO=3&transport=polling&t=1617274968989-196&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.335930
+127.0.0.1 - - [01/Apr/2021 12:02:51] "GET /socket.io/?EIO=3&transport=polling&t=1617274970345-197&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343246
+127.0.0.1 - - [01/Apr/2021 12:02:53] "POST /socket.io/?EIO=3&transport=polling&t=1617274972864-199&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.001041
+127.0.0.1 - - [01/Apr/2021 12:02:53] "GET /socket.io/?EIO=3&transport=polling&t=1617274971726-198&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 311 1.324473
+127.0.0.1 - - [01/Apr/2021 12:02:54] "GET /socket.io/?EIO=3&transport=polling&t=1617274973071-200&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.334800
+127.0.0.1 - - [01/Apr/2021 12:02:55] "GET /socket.io/?EIO=3&transport=polling&t=1617274974422-201&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.347786
+127.0.0.1 - - [01/Apr/2021 12:02:57] "GET /socket.io/?EIO=3&transport=polling&t=1617274975800-202&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.331069
+127.0.0.1 - - [01/Apr/2021 12:02:58] "GET /socket.io/?EIO=3&transport=polling&t=1617274977147-203&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341838
+127.0.0.1 - - [01/Apr/2021 12:02:59] "GET /socket.io/?EIO=3&transport=polling&t=1617274978576-204&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.273321
+127.0.0.1 - - [01/Apr/2021 12:03:01] "GET /socket.io/?EIO=3&transport=polling&t=1617274979863-205&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.347080
+127.0.0.1 - - [01/Apr/2021 12:03:02] "GET /socket.io/?EIO=3&transport=polling&t=1617274981343-206&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.231969
+127.0.0.1 - - [01/Apr/2021 12:03:04] "GET /socket.io/?EIO=3&transport=polling&t=1617274982674-207&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.249843
+127.0.0.1 - - [01/Apr/2021 12:03:05] "GET /socket.io/?EIO=3&transport=polling&t=1617274983944-208&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345214
+127.0.0.1 - - [01/Apr/2021 12:03:06] "GET /socket.io/?EIO=3&transport=polling&t=1617274985308-209&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.337819
+127.0.0.1 - - [01/Apr/2021 12:03:08] "GET /socket.io/?EIO=3&transport=polling&t=1617274986773-210&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.234562
+127.0.0.1 - - [01/Apr/2021 12:03:09] "GET /socket.io/?EIO=3&transport=polling&t=1617274988028-211&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.339011
+127.0.0.1 - - [01/Apr/2021 12:03:10] "GET /socket.io/?EIO=3&transport=polling&t=1617274989434-212&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.282811
+127.0.0.1 - - [01/Apr/2021 12:03:12] "GET /socket.io/?EIO=3&transport=polling&t=1617274990744-213&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341480
+127.0.0.1 - - [01/Apr/2021 12:03:13] "GET /socket.io/?EIO=3&transport=polling&t=1617274992103-214&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345584
+127.0.0.1 - - [01/Apr/2021 12:03:14] "GET /socket.io/?EIO=3&transport=polling&t=1617274993463-215&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346779
+127.0.0.1 - - [01/Apr/2021 12:03:16] "GET /socket.io/?EIO=3&transport=polling&t=1617274994825-216&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343521
+127.0.0.1 - - [01/Apr/2021 12:03:17] "GET /socket.io/?EIO=3&transport=polling&t=1617274996298-217&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.230683
+127.0.0.1 - - [01/Apr/2021 12:03:18] "POST /socket.io/?EIO=3&transport=polling&t=1617274998857-219&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000868
+127.0.0.1 - - [01/Apr/2021 12:03:18] "GET /socket.io/?EIO=3&transport=polling&t=1617274997626-218&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 311 1.275808
+127.0.0.1 - - [01/Apr/2021 12:03:20] "GET /socket.io/?EIO=3&transport=polling&t=1617274998927-220&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.330080
+127.0.0.1 - - [01/Apr/2021 12:03:21] "GET /socket.io/?EIO=3&transport=polling&t=1617275000273-221&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.332632
+127.0.0.1 - - [01/Apr/2021 12:03:23] "GET /socket.io/?EIO=3&transport=polling&t=1617275001723-222&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.247303
+127.0.0.1 - - [01/Apr/2021 12:03:24] "GET /socket.io/?EIO=3&transport=polling&t=1617275002986-223&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.340952
+127.0.0.1 - - [01/Apr/2021 12:03:25] "GET /socket.io/?EIO=3&transport=polling&t=1617275004350-224&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.329784
+127.0.0.1 - - [01/Apr/2021 12:03:27] "GET /socket.io/?EIO=3&transport=polling&t=1617275005703-225&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.347080
+127.0.0.1 - - [01/Apr/2021 12:03:28] "GET /socket.io/?EIO=3&transport=polling&t=1617275007064-226&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.342601
+127.0.0.1 - - [01/Apr/2021 12:03:29] "GET /socket.io/?EIO=3&transport=polling&t=1617275008477-227&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.310330
+127.0.0.1 - - [01/Apr/2021 12:03:31] "GET /socket.io/?EIO=3&transport=polling&t=1617275009793-228&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338801
+127.0.0.1 - - [01/Apr/2021 12:03:32] "GET /socket.io/?EIO=3&transport=polling&t=1617275011156-229&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.331804
+127.0.0.1 - - [01/Apr/2021 12:03:33] "GET /socket.io/?EIO=3&transport=polling&t=1617275012511-230&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338199
+127.0.0.1 - - [01/Apr/2021 12:03:35] "GET /socket.io/?EIO=3&transport=polling&t=1617275013863-231&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.358888
+127.0.0.1 - - [01/Apr/2021 12:03:36] "GET /socket.io/?EIO=3&transport=polling&t=1617275015233-232&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.334910
+127.0.0.1 - - [01/Apr/2021 12:03:38] "GET /socket.io/?EIO=3&transport=polling&t=1617275016605-233&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.323475
+127.0.0.1 - - [01/Apr/2021 12:03:39] "GET /socket.io/?EIO=3&transport=polling&t=1617275017945-234&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341569
+127.0.0.1 - - [01/Apr/2021 12:03:40] "GET /socket.io/?EIO=3&transport=polling&t=1617275019304-235&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.350990
+127.0.0.1 - - [01/Apr/2021 12:03:42] "GET /socket.io/?EIO=3&transport=polling&t=1617275020672-236&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346599
+127.0.0.1 - - [01/Apr/2021 12:03:43] "GET /socket.io/?EIO=3&transport=polling&t=1617275022035-237&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.332967
+127.0.0.1 - - [01/Apr/2021 12:03:44] "GET /socket.io/?EIO=3&transport=polling&t=1617275023435-238&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.289068
+127.0.0.1 - - [01/Apr/2021 12:03:44] "POST /socket.io/?EIO=3&transport=polling&t=1617275024848-240&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000511
+127.0.0.1 - - [01/Apr/2021 12:03:44] "GET /socket.io/?EIO=3&transport=polling&t=1617275024744-239&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 215 0.102866
+127.0.0.1 - - [01/Apr/2021 12:03:46] "GET /socket.io/?EIO=3&transport=polling&t=1617275024875-241&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.214864
+127.0.0.1 - - [01/Apr/2021 12:03:47] "GET /socket.io/?EIO=3&transport=polling&t=1617275026194-242&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.251818
+127.0.0.1 - - [01/Apr/2021 12:03:48] "GET /socket.io/?EIO=3&transport=polling&t=1617275027525-243&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.282061
+127.0.0.1 - - [01/Apr/2021 12:03:50] "GET /socket.io/?EIO=3&transport=polling&t=1617275028824-244&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.358188
+127.0.0.1 - - [01/Apr/2021 12:03:51] "GET /socket.io/?EIO=3&transport=polling&t=1617275030197-245&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341740
+127.0.0.1 - - [01/Apr/2021 12:03:52] "GET /socket.io/?EIO=3&transport=polling&t=1617275031554-246&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.332063
+127.0.0.1 - - [01/Apr/2021 12:03:54] "GET /socket.io/?EIO=3&transport=polling&t=1617275032903-247&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345934
+127.0.0.1 - - [01/Apr/2021 12:03:55] "GET /socket.io/?EIO=3&transport=polling&t=1617275034262-248&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.344081
+127.0.0.1 - - [01/Apr/2021 12:03:57] "GET /socket.io/?EIO=3&transport=polling&t=1617275035624-249&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.351148
+127.0.0.1 - - [01/Apr/2021 12:03:58] "GET /socket.io/?EIO=3&transport=polling&t=1617275036994-250&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.350140
+127.0.0.1 - - [01/Apr/2021 12:03:59] "GET /socket.io/?EIO=3&transport=polling&t=1617275038364-251&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.402514
+127.0.0.1 - - [01/Apr/2021 12:04:01] "GET /socket.io/?EIO=3&transport=polling&t=1617275039785-252&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.351968
+127.0.0.1 - - [01/Apr/2021 12:04:02] "GET /socket.io/?EIO=3&transport=polling&t=1617275041181-253&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.307113
+127.0.0.1 - - [01/Apr/2021 12:04:03] "GET /socket.io/?EIO=3&transport=polling&t=1617275042583-254&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.274446
+127.0.0.1 - - [01/Apr/2021 12:04:05] "GET /socket.io/?EIO=3&transport=polling&t=1617275043871-255&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341345
+127.0.0.1 - - [01/Apr/2021 12:04:06] "GET /socket.io/?EIO=3&transport=polling&t=1617275045225-256&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.339561
+127.0.0.1 - - [01/Apr/2021 12:04:08] "GET /socket.io/?EIO=3&transport=polling&t=1617275046674-257&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.262809
+127.0.0.1 - - [01/Apr/2021 12:04:09] "GET /socket.io/?EIO=3&transport=polling&t=1617275047957-258&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.329238
+127.0.0.1 - - [01/Apr/2021 12:04:10] "GET /socket.io/?EIO=3&transport=polling&t=1617275049340-259&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.307302
+127.0.0.1 - - [01/Apr/2021 12:04:10] "POST /socket.io/?EIO=3&transport=polling&t=1617275050865-261&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000556
+127.0.0.1 - - [01/Apr/2021 12:04:10] "GET /socket.io/?EIO=3&transport=polling&t=1617275050683-260&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 215 0.190106
+127.0.0.1 - - [01/Apr/2021 12:04:12] "GET /socket.io/?EIO=3&transport=polling&t=1617275050885-262&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.175951
+127.0.0.1 - - [01/Apr/2021 12:04:13] "GET /socket.io/?EIO=3&transport=polling&t=1617275052074-263&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.369777
+127.0.0.1 - - [01/Apr/2021 12:04:14] "GET /socket.io/?EIO=3&transport=polling&t=1617275053460-264&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.353413
+127.0.0.1 - - [01/Apr/2021 12:04:16] "GET /socket.io/?EIO=3&transport=polling&t=1617275054842-265&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.325238
+127.0.0.1 - - [01/Apr/2021 12:04:17] "GET /socket.io/?EIO=3&transport=polling&t=1617275056184-266&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341348
+127.0.0.1 - - [01/Apr/2021 12:04:18] "GET /socket.io/?EIO=3&transport=polling&t=1617275057543-267&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346341
+127.0.0.1 - - [01/Apr/2021 12:04:20] "GET /socket.io/?EIO=3&transport=polling&t=1617275058903-268&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.344622
+127.0.0.1 - - [01/Apr/2021 12:04:21] "GET /socket.io/?EIO=3&transport=polling&t=1617275060263-269&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.342961
+127.0.0.1 - - [01/Apr/2021 12:04:23] "GET /socket.io/?EIO=3&transport=polling&t=1617275061729-270&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.238644
+127.0.0.1 - - [01/Apr/2021 12:04:24] "GET /socket.io/?EIO=3&transport=polling&t=1617275062984-271&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345641
+127.0.0.1 - - [01/Apr/2021 12:04:25] "GET /socket.io/?EIO=3&transport=polling&t=1617275064389-272&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.295816
+127.0.0.1 - - [01/Apr/2021 12:04:27] "GET /socket.io/?EIO=3&transport=polling&t=1617275065721-273&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.330400
+127.0.0.1 - - [01/Apr/2021 12:04:28] "GET /socket.io/?EIO=3&transport=polling&t=1617275067154-274&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.254717
+127.0.0.1 - - [01/Apr/2021 12:04:29] "GET /socket.io/?EIO=3&transport=polling&t=1617275068485-275&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.283548
+127.0.0.1 - - [01/Apr/2021 12:04:31] "GET /socket.io/?EIO=3&transport=polling&t=1617275069815-276&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.311190
+127.0.0.1 - - [01/Apr/2021 12:04:32] "GET /socket.io/?EIO=3&transport=polling&t=1617275071144-277&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.339551
+127.0.0.1 - - [01/Apr/2021 12:04:33] "GET /socket.io/?EIO=3&transport=polling&t=1617275072502-278&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346085
+127.0.0.1 - - [01/Apr/2021 12:04:35] "GET /socket.io/?EIO=3&transport=polling&t=1617275073860-279&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.349890
+127.0.0.1 - - [01/Apr/2021 12:04:36] "GET /socket.io/?EIO=3&transport=polling&t=1617275075225-280&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.337352
+127.0.0.1 - - [01/Apr/2021 12:04:36] "POST /socket.io/?EIO=3&transport=polling&t=1617275076881-282&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000690
+127.0.0.1 - - [01/Apr/2021 12:04:36] "GET /socket.io/?EIO=3&transport=polling&t=1617275076678-281&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 215 0.203896
+127.0.0.1 - - [01/Apr/2021 12:04:38] "GET /socket.io/?EIO=3&transport=polling&t=1617275076896-283&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.031487
+127.0.0.1 - - [01/Apr/2021 12:04:39] "GET /socket.io/?EIO=3&transport=polling&t=1617275077942-284&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346378
+127.0.0.1 - - [01/Apr/2021 12:04:40] "GET /socket.io/?EIO=3&transport=polling&t=1617275079301-285&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345866
+127.0.0.1 - - [01/Apr/2021 12:04:42] "GET /socket.io/?EIO=3&transport=polling&t=1617275080662-286&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343360
+127.0.0.1 - - [01/Apr/2021 12:04:43] "GET /socket.io/?EIO=3&transport=polling&t=1617275082023-287&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.384626
+127.0.0.1 - - [01/Apr/2021 12:04:44] "GET /socket.io/?EIO=3&transport=polling&t=1617275083538-288&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.263629
+127.0.0.1 - - [01/Apr/2021 12:04:46] "GET /socket.io/?EIO=3&transport=polling&t=1617275084826-289&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.337256
+127.0.0.1 - - [01/Apr/2021 12:04:47] "GET /socket.io/?EIO=3&transport=polling&t=1617275086226-290&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.302148
+127.0.0.1 - - [01/Apr/2021 12:04:48] "GET /socket.io/?EIO=3&transport=polling&t=1617275087614-291&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.285467
+127.0.0.1 - - [01/Apr/2021 12:04:50] "GET /socket.io/?EIO=3&transport=polling&t=1617275088912-292&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338705
+127.0.0.1 - - [01/Apr/2021 12:04:51] "GET /socket.io/?EIO=3&transport=polling&t=1617275090266-293&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.340593
+127.0.0.1 - - [01/Apr/2021 12:04:53] "GET /socket.io/?EIO=3&transport=polling&t=1617275091729-294&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.237009
+127.0.0.1 - - [01/Apr/2021 12:04:54] "GET /socket.io/?EIO=3&transport=polling&t=1617275092982-295&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345986
+127.0.0.1 - - [01/Apr/2021 12:04:55] "GET /socket.io/?EIO=3&transport=polling&t=1617275094393-296&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.289102
+127.0.0.1 - - [01/Apr/2021 12:04:57] "GET /socket.io/?EIO=3&transport=polling&t=1617275095723-297&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.320431
+127.0.0.1 - - [01/Apr/2021 12:04:58] "GET /socket.io/?EIO=3&transport=polling&t=1617275097062-298&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.344808
+127.0.0.1 - - [01/Apr/2021 12:04:59] "GET /socket.io/?EIO=3&transport=polling&t=1617275098489-299&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.276369
+127.0.0.1 - - [01/Apr/2021 12:05:01] "GET /socket.io/?EIO=3&transport=polling&t=1617275099783-300&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.344692
+127.0.0.1 - - [01/Apr/2021 12:05:02] "GET /socket.io/?EIO=3&transport=polling&t=1617275101145-301&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338589
+127.0.0.1 - - [01/Apr/2021 12:05:02] "POST /socket.io/?EIO=3&transport=polling&t=1617275102845-303&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000947
+127.0.0.1 - - [01/Apr/2021 12:05:02] "GET /socket.io/?EIO=3&transport=polling&t=1617275102502-302&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 215 0.345577
+127.0.0.1 - - [01/Apr/2021 12:05:03] "GET /socket.io/?EIO=3&transport=polling&t=1617275102864-304&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 0.983934
+127.0.0.1 - - [01/Apr/2021 12:05:05] "GET /socket.io/?EIO=3&transport=polling&t=1617275103865-305&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338649
+127.0.0.1 - - [01/Apr/2021 12:05:06] "GET /socket.io/?EIO=3&transport=polling&t=1617275105246-306&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.310016
+127.0.0.1 - - [01/Apr/2021 12:05:08] "GET /socket.io/?EIO=3&transport=polling&t=1617275106580-307&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346720
+127.0.0.1 - - [01/Apr/2021 12:05:09] "GET /socket.io/?EIO=3&transport=polling&t=1617275107941-308&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.347919
+127.0.0.1 - - [01/Apr/2021 12:05:10] "GET /socket.io/?EIO=3&transport=polling&t=1617275109305-309&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341082
+127.0.0.1 - - [01/Apr/2021 12:05:12] "GET /socket.io/?EIO=3&transport=polling&t=1617275110709-310&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.299340
+127.0.0.1 - - [01/Apr/2021 12:05:13] "GET /socket.io/?EIO=3&transport=polling&t=1617275112019-311&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.351104
+127.0.0.1 - - [01/Apr/2021 12:05:14] "GET /socket.io/?EIO=3&transport=polling&t=1617275113439-312&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.287525
+127.0.0.1 - - [01/Apr/2021 12:05:16] "GET /socket.io/?EIO=3&transport=polling&t=1617275114772-313&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.308040
+127.0.0.1 - - [01/Apr/2021 12:05:17] "GET /socket.io/?EIO=3&transport=polling&t=1617275116102-314&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341438
+127.0.0.1 - - [01/Apr/2021 12:05:18] "GET /socket.io/?EIO=3&transport=polling&t=1617275117535-315&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.270813
+127.0.0.1 - - [01/Apr/2021 12:05:20] "GET /socket.io/?EIO=3&transport=polling&t=1617275118864-316&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.302263
+127.0.0.1 - - [01/Apr/2021 12:05:21] "GET /socket.io/?EIO=3&transport=polling&t=1617275120199-317&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.325389
+127.0.0.1 - - [01/Apr/2021 12:05:22] "GET /socket.io/?EIO=3&transport=polling&t=1617275121631-318&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.255197
+127.0.0.1 - - [01/Apr/2021 12:05:24] "GET /socket.io/?EIO=3&transport=polling&t=1617275122908-319&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.336474
+127.0.0.1 - - [01/Apr/2021 12:05:25] "GET /socket.io/?EIO=3&transport=polling&t=1617275124294-320&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.310364
+127.0.0.1 - - [01/Apr/2021 12:05:27] "GET /socket.io/?EIO=3&transport=polling&t=1617275125728-321&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.238118
+127.0.0.1 - - [01/Apr/2021 12:05:28] "POST /socket.io/?EIO=3&transport=polling&t=1617275127864-323&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000478
+127.0.0.1 - - [01/Apr/2021 12:05:28] "GET /socket.io/?EIO=3&transport=polling&t=1617275126979-322&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 311 1.348706
+127.0.0.1 - - [01/Apr/2021 12:05:29] "GET /socket.io/?EIO=3&transport=polling&t=1617275128342-324&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343514
+127.0.0.1 - - [01/Apr/2021 12:05:31] "GET /socket.io/?EIO=3&transport=polling&t=1617275129701-325&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343055
+127.0.0.1 - - [01/Apr/2021 12:05:32] "GET /socket.io/?EIO=3&transport=polling&t=1617275131065-326&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.347387
+127.0.0.1 - - [01/Apr/2021 12:05:33] "GET /socket.io/?EIO=3&transport=polling&t=1617275132491-327&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.274299
+127.0.0.1 - - [01/Apr/2021 12:05:35] "GET /socket.io/?EIO=3&transport=polling&t=1617275133813-328&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.276145
+127.0.0.1 - - [01/Apr/2021 12:05:36] "GET /socket.io/?EIO=3&transport=polling&t=1617275135145-329&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.339383
+127.0.0.1 - - [01/Apr/2021 12:05:37] "GET /socket.io/?EIO=3&transport=polling&t=1617275136503-330&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.337758
+127.0.0.1 - - [01/Apr/2021 12:05:39] "GET /socket.io/?EIO=3&transport=polling&t=1617275137861-331&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.383067
+127.0.0.1 - - [01/Apr/2021 12:05:40] "GET /socket.io/?EIO=3&transport=polling&t=1617275139297-332&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.352098
+127.0.0.1 - - [01/Apr/2021 12:05:42] "GET /socket.io/?EIO=3&transport=polling&t=1617275140669-333&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.195477
+127.0.0.1 - - [01/Apr/2021 12:05:43] "GET /socket.io/?EIO=3&transport=polling&t=1617275142019-334&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346156
+127.0.0.1 - - [01/Apr/2021 12:05:44] "GET /socket.io/?EIO=3&transport=polling&t=1617275143387-335&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.335564
+127.0.0.1 - - [01/Apr/2021 12:05:46] "GET /socket.io/?EIO=3&transport=polling&t=1617275144775-336&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.311028
+127.0.0.1 - - [01/Apr/2021 12:05:47] "GET /socket.io/?EIO=3&transport=polling&t=1617275146104-337&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338972
+127.0.0.1 - - [01/Apr/2021 12:05:48] "GET /socket.io/?EIO=3&transport=polling&t=1617275147536-338&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.249992
+127.0.0.1 - - [01/Apr/2021 12:05:50] "GET /socket.io/?EIO=3&transport=polling&t=1617275148820-339&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.344956
+127.0.0.1 - - [01/Apr/2021 12:05:51] "GET /socket.io/?EIO=3&transport=polling&t=1617275150199-340&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.321915
+127.0.0.1 - - [01/Apr/2021 12:05:52] "GET /socket.io/?EIO=3&transport=polling&t=1617275151633-341&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.250024
+127.0.0.1 - - [01/Apr/2021 12:05:54] "GET /socket.io/?EIO=3&transport=polling&t=1617275152900-342&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.336313
+127.0.0.1 - - [01/Apr/2021 12:05:54] "POST /socket.io/?EIO=3&transport=polling&t=1617275154258-343&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000467
+127.0.0.1 - - [01/Apr/2021 12:05:54] "GET /socket.io/?EIO=3&transport=polling&t=1617275154261-344&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 215 0.000464
+127.0.0.1 - - [01/Apr/2021 12:05:55] "GET /socket.io/?EIO=3&transport=polling&t=1617275154277-345&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.328117
+127.0.0.1 - - [01/Apr/2021 12:05:57] "GET /socket.io/?EIO=3&transport=polling&t=1617275155731-346&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.241452
+127.0.0.1 - - [01/Apr/2021 12:05:58] "GET /socket.io/?EIO=3&transport=polling&t=1617275156989-347&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.335697
+127.0.0.1 - - [01/Apr/2021 12:05:59] "GET /socket.io/?EIO=3&transport=polling&t=1617275158395-348&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.328299
+127.0.0.1 - - [01/Apr/2021 12:06:01] "GET /socket.io/?EIO=3&transport=polling&t=1617275159826-349&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.296986
+127.0.0.1 - - [01/Apr/2021 12:06:02] "GET /socket.io/?EIO=3&transport=polling&t=1617275161158-350&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.325129
+127.0.0.1 - - [01/Apr/2021 12:06:03] "GET /socket.io/?EIO=3&transport=polling&t=1617275162591-351&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.251111
+127.0.0.1 - - [01/Apr/2021 12:06:05] "GET /socket.io/?EIO=3&transport=polling&t=1617275163858-352&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345901
+127.0.0.1 - - [01/Apr/2021 12:06:06] "GET /socket.io/?EIO=3&transport=polling&t=1617275165247-353&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.318182
+127.0.0.1 - - [01/Apr/2021 12:06:08] "GET /socket.io/?EIO=3&transport=polling&t=1617275166619-354&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.312051
+127.0.0.1 - - [01/Apr/2021 12:06:09] "GET /socket.io/?EIO=3&transport=polling&t=1617275167958-355&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.312809
+127.0.0.1 - - [01/Apr/2021 12:06:10] "GET /socket.io/?EIO=3&transport=polling&t=1617275169350-356&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.292070
+127.0.0.1 - - [01/Apr/2021 12:06:12] "GET /socket.io/?EIO=3&transport=polling&t=1617275170659-357&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.344115
+127.0.0.1 - - [01/Apr/2021 12:06:13] "GET /socket.io/?EIO=3&transport=polling&t=1617275172021-358&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341077
+127.0.0.1 - - [01/Apr/2021 12:06:14] "GET /socket.io/?EIO=3&transport=polling&t=1617275173446-359&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.275434
+127.0.0.1 - - [01/Apr/2021 12:06:16] "GET /socket.io/?EIO=3&transport=polling&t=1617275174779-360&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.304528
+127.0.0.1 - - [01/Apr/2021 12:06:17] "GET /socket.io/?EIO=3&transport=polling&t=1617275176099-361&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.342647
+127.0.0.1 - - [01/Apr/2021 12:06:18] "GET /socket.io/?EIO=3&transport=polling&t=1617275177459-362&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338462
+127.0.0.1 - - [01/Apr/2021 12:06:20] "POST /socket.io/?EIO=3&transport=polling&t=1617275179902-364&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000539
+127.0.0.1 - - [01/Apr/2021 12:06:20] "GET /socket.io/?EIO=3&transport=polling&t=1617275178871-363&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 311 1.330881
+127.0.0.1 - - [01/Apr/2021 12:06:21] "GET /socket.io/?EIO=3&transport=polling&t=1617275180223-365&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.381714
+127.0.0.1 - - [01/Apr/2021 12:06:23] "GET /socket.io/?EIO=3&transport=polling&t=1617275181640-366&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.323452
+127.0.0.1 - - [01/Apr/2021 12:06:24] "GET /socket.io/?EIO=3&transport=polling&t=1617275182977-367&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.346750
+127.0.0.1 - - [01/Apr/2021 12:06:25] "GET /socket.io/?EIO=3&transport=polling&t=1617275184340-368&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.344706
+127.0.0.1 - - [01/Apr/2021 12:06:27] "GET /socket.io/?EIO=3&transport=polling&t=1617275185696-369&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.348813
+127.0.0.1 - - [01/Apr/2021 12:06:28] "GET /socket.io/?EIO=3&transport=polling&t=1617275187066-370&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.334819
+127.0.0.1 - - [01/Apr/2021 12:06:29] "GET /socket.io/?EIO=3&transport=polling&t=1617275188417-371&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343927
+127.0.0.1 - - [01/Apr/2021 12:06:31] "GET /socket.io/?EIO=3&transport=polling&t=1617275189831-372&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.289543
+127.0.0.1 - - [01/Apr/2021 12:06:32] "GET /socket.io/?EIO=3&transport=polling&t=1617275191138-373&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.342284
+127.0.0.1 - - [01/Apr/2021 12:06:33] "GET /socket.io/?EIO=3&transport=polling&t=1617275192502-374&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.336954
+127.0.0.1 - - [01/Apr/2021 12:06:35] "GET /socket.io/?EIO=3&transport=polling&t=1617275193855-375&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345834
+127.0.0.1 - - [01/Apr/2021 12:06:36] "GET /socket.io/?EIO=3&transport=polling&t=1617275195219-376&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341983
+127.0.0.1 - - [01/Apr/2021 12:06:38] "GET /socket.io/?EIO=3&transport=polling&t=1617275196576-377&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.355182
+127.0.0.1 - - [01/Apr/2021 12:06:39] "GET /socket.io/?EIO=3&transport=polling&t=1617275197950-378&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.332826
+127.0.0.1 - - [01/Apr/2021 12:06:40] "GET /socket.io/?EIO=3&transport=polling&t=1617275199353-379&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.326439
+127.0.0.1 - - [01/Apr/2021 12:06:42] "GET /socket.io/?EIO=3&transport=polling&t=1617275200697-380&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.384165
+127.0.0.1 - - [01/Apr/2021 12:06:43] "GET /socket.io/?EIO=3&transport=polling&t=1617275202096-381&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341620
+127.0.0.1 - - [01/Apr/2021 12:06:44] "GET /socket.io/?EIO=3&transport=polling&t=1617275203458-382&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.359711
+127.0.0.1 - - [01/Apr/2021 12:06:46] "POST /socket.io/?EIO=3&transport=polling&t=1617275205842-384&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.000753
+127.0.0.1 - - [01/Apr/2021 12:06:46] "GET /socket.io/?EIO=3&transport=polling&t=1617275204836-383&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 311 1.338156
+127.0.0.1 - - [01/Apr/2021 12:06:47] "GET /socket.io/?EIO=3&transport=polling&t=1617275206190-385&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.335825
+127.0.0.1 - - [01/Apr/2021 12:06:49] "GET /socket.io/?EIO=3&transport=polling&t=1617275207545-386&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.386966
+127.0.0.1 - - [01/Apr/2021 12:06:50] "GET /socket.io/?EIO=3&transport=polling&t=1617275208948-387&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.371901
+127.0.0.1 - - [01/Apr/2021 12:06:51] "GET /socket.io/?EIO=3&transport=polling&t=1617275210337-388&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.362906
+127.0.0.1 - - [01/Apr/2021 12:06:53] "GET /socket.io/?EIO=3&transport=polling&t=1617275211741-389&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.297770
+127.0.0.1 - - [01/Apr/2021 12:06:54] "GET /socket.io/?EIO=3&transport=polling&t=1617275213057-390&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.340690
+127.0.0.1 - - [01/Apr/2021 12:06:55] "GET /socket.io/?EIO=3&transport=polling&t=1617275214414-391&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.347285
+127.0.0.1 - - [01/Apr/2021 12:06:57] "GET /socket.io/?EIO=3&transport=polling&t=1617275215776-392&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343599
+127.0.0.1 - - [01/Apr/2021 12:06:58] "GET /socket.io/?EIO=3&transport=polling&t=1617275217135-393&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345722
+127.0.0.1 - - [01/Apr/2021 12:06:59] "GET /socket.io/?EIO=3&transport=polling&t=1617275218494-394&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.356835
+127.0.0.1 - - [01/Apr/2021 12:07:01] "GET /socket.io/?EIO=3&transport=polling&t=1617275219876-395&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345011
+127.0.0.1 - - [01/Apr/2021 12:07:02] "GET /socket.io/?EIO=3&transport=polling&t=1617275221265-396&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.304448
+127.0.0.1 - - [01/Apr/2021 12:07:04] "GET /socket.io/?EIO=3&transport=polling&t=1617275222701-397&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.218734
+127.0.0.1 - - [01/Apr/2021 12:07:05] "GET /socket.io/?EIO=3&transport=polling&t=1617275223933-398&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.356275
+127.0.0.1 - - [01/Apr/2021 12:07:06] "GET /socket.io/?EIO=3&transport=polling&t=1617275225306-399&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.333837
+127.0.0.1 - - [01/Apr/2021 12:07:08] "GET /socket.io/?EIO=3&transport=polling&t=1617275226693-400&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.316494
+127.0.0.1 - - [01/Apr/2021 12:07:09] "GET /socket.io/?EIO=3&transport=polling&t=1617275228026-401&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.328357
+127.0.0.1 - - [01/Apr/2021 12:07:10] "GET /socket.io/?EIO=3&transport=polling&t=1617275229374-402&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.342529
+127.0.0.1 - - [01/Apr/2021 12:07:12] "POST /socket.io/?EIO=3&transport=polling&t=1617275231874-404&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 219 0.001070
+127.0.0.1 - - [01/Apr/2021 12:07:12] "GET /socket.io/?EIO=3&transport=polling&t=1617275230737-403&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 311 1.353494
+127.0.0.1 - - [01/Apr/2021 12:07:13] "GET /socket.io/?EIO=3&transport=polling&t=1617275232106-405&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.329797
+127.0.0.1 - - [01/Apr/2021 12:07:14] "GET /socket.io/?EIO=3&transport=polling&t=1617275233512-406&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.280322
+127.0.0.1 - - [01/Apr/2021 12:07:16] "GET /socket.io/?EIO=3&transport=polling&t=1617275234815-407&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.341802
+127.0.0.1 - - [01/Apr/2021 12:07:17] "GET /socket.io/?EIO=3&transport=polling&t=1617275236215-408&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.305475
+127.0.0.1 - - [01/Apr/2021 12:07:18] "GET /socket.io/?EIO=3&transport=polling&t=1617275237653-409&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.231786
+127.0.0.1 - - [01/Apr/2021 12:07:20] "GET /socket.io/?EIO=3&transport=polling&t=1617275238903-410&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.334435
+127.0.0.1 - - [01/Apr/2021 12:07:21] "GET /socket.io/?EIO=3&transport=polling&t=1617275240312-411&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.345337
+127.0.0.1 - - [01/Apr/2021 12:07:23] "GET /socket.io/?EIO=3&transport=polling&t=1617275241746-412&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.301823
+127.0.0.1 - - [01/Apr/2021 12:07:24] "GET /socket.io/?EIO=3&transport=polling&t=1617275243062-413&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.336158
+127.0.0.1 - - [01/Apr/2021 12:07:25] "GET /socket.io/?EIO=3&transport=polling&t=1617275244511-414&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.264976
+127.0.0.1 - - [01/Apr/2021 12:07:27] "GET /socket.io/?EIO=3&transport=polling&t=1617275245793-415&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.325775
+127.0.0.1 - - [01/Apr/2021 12:07:28] "GET /socket.io/?EIO=3&transport=polling&t=1617275247137-416&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.338543
+127.0.0.1 - - [01/Apr/2021 12:07:29] "GET /socket.io/?EIO=3&transport=polling&t=1617275248493-417&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.343155
+127.0.0.1 - - [01/Apr/2021 12:07:31] "GET /socket.io/?EIO=3&transport=polling&t=1617275249879-418&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.318276
+127.0.0.1 - - [01/Apr/2021 12:07:32] "GET /socket.io/?EIO=3&transport=polling&t=1617275251271-419&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.287020
+127.0.0.1 - - [01/Apr/2021 12:07:34] "GET /socket.io/?EIO=3&transport=polling&t=1617275252596-420&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.330613
+127.0.0.1 - - [01/Apr/2021 12:07:35] "GET /socket.io/?EIO=3&transport=polling&t=1617275253941-421&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 309 1.338550
+127.0.0.1 - - [01/Apr/2021 12:07:36] "GET /socket.io/?EIO=3&transport=polling&t=1617275255297-422&sid=40717b6140d74ce89a32d24e9ff0c9e7 HTTP/1.1" 200 307 1.339489
+ * Detected change in '/home/pi/TempSense/app.py', reloading
+2021-03-31 22:52:20
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client connected
+Client connected
+Client connected
+Client connected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+Client disconnected
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 126-610-909
+(27870) wsgi starting up on http://127.0.0.1:5000
+ * Detected change in '/home/pi/TempSense/app.py', reloading
+2021-04-01 12:07:39
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 126-610-909
+(27888) wsgi starting up on http://127.0.0.1:5000
+ * Detected change in '/home/pi/TempSense/app.py', reloading
+2021-04-01 12:07:49
+ * Restarting with stat
+  File "/home/pi/TempSense/app.py", line 68
+    @app.route('/bokehall'):
+                           ^
+SyntaxError: invalid syntax
+2021-03-31 22:52:18
