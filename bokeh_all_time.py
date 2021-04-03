@@ -51,7 +51,7 @@ def get_bokeh_all_graph():
     p.xaxis.major_label_text_color = '#F6AA1C'
     p.yaxis.major_label_text_color = '#F6AA1C'
 
-    r = p.multi_line(xs=[time, time, time], ys=[feels, outside, alltemp], color=['white', '#878E88', '#F6AA1C'],  line_width=2)
+    r = p.multi_line(xs=[time, time, time], ys=[feels, outside, alltemp], color=['blue', '#878E88', '#F6AA1C'],  line_width=2)
 
     legend = Legend(items=[
         LegendItem(label='Feels Like', renderers=[r], index=0),
