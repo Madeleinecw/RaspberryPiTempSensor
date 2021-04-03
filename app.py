@@ -1,4 +1,5 @@
 from bokeh_all_time import get_bokeh_all_graph
+from bokehgraphmaker import *
 from datetime import date, datetime, timedelta
 from flask import Flask, render_template, url_for, copy_current_request_context, jsonify
 from flask_cors import CORS
@@ -7,9 +8,9 @@ from graphmaker import make_plot_from_range
 import json
 from threading import Thread, Event
 from time import sleep
-from utils.database_service import add_temperature, get_time_of_most_recent_temperature, get_all_temperatures, get_all_timestamps, get_temperatures_from_range
+from utils.database_service import add_temperature, get_time_of_most_recent_temperature, get_all_temperatures, get_all_timestamps
 from utils.open_weather_map_service import get_outside_temp, get_outside_feels_like_temperature
-from utils.temperatures_database_service import add_temperatures_to_temperatures_database
+from utils.temperatures_database_service import add_temperatures_to_temperatures_database, get_temperatures_from_range
 from w1thermsensor import W1ThermSensor
 
 app = Flask(__name__)
@@ -36,12 +37,7 @@ def time_and_temp_background_task():
         socketio.emit('newTime', {'time' : str(timeNow)}, namespace='/test')
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temperature().minute):
-            add_temperature(temperature, datetime.now())
-            add_temperatures_to_temperatures_database(temperature, datetime.now().replace(microsecond=0), get_outside_temp(), get_outside_feels_like_temperature())
-            graph = make_plot_from_range(get_last_day())
-            if reloadGraph:
-                socketio.emit('newGraph', {'graph': graph}, namespace='/test')
-                
+            add_temperatures_to_temperatures_database(temperature, datetime.now().replace(microsecond=0), get_outside_temp(), get_outside_feels_like_temperature()) 
         socketio.sleep(0.5)
 
 
@@ -58,22 +54,7 @@ def get_last_day():
 @app.route('/')
 def index():
     #only by sending this page first will the client be connected to the socketio instance
-    return render_template('base.html')
-
-@app.route('/all')
-def getAllTimeGraph():
-    global reloadGraph
-    reloadGraph = True
-
-    graphHtml = make_plot_from_range(get_last_day())
-    body = {'graphHtml': graphHtml}
-    
-    return jsonify(body)
-
-@app.route('/bokehall', methods=['GET'])
-def bokeh_all():
-    response =  json.dumps(get_bokeh_all_graph())
-    return response
+    return "index"
 
 
 @app.route('/getgraph/<startTime>/<endTime>')
@@ -85,10 +66,9 @@ def getGraphAsHtml(startTime: str, endTime: str):
     formattedEndTime = datetime.strptime(endTime, '%Y-%m-%dT%H:%M')
     
     rangeOfTemperatures = get_temperatures_from_range(formattedStartTime, formattedEndTime)    
-    graphHtml = make_plot_from_range(rangeOfTemperatures)
-    body = {'graphHtml' : graphHtml}
+    graphJson = get_bokeh_graph_from_range(rangeOfTemperatures)
 
-    return jsonify(body) 
+    return json.dumps(graphJson)
 
 
 @socketio.on('connect', namespace='/test')

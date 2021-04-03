@@ -1,5 +1,5 @@
 import psycopg2
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from typing import List, Tuple
 
 conn = psycopg2.connect('dbname=TempSense')
@@ -69,5 +69,18 @@ def get_all_feels_like_temps():
     cur.execute(query)
     return cur.fetchall()
 
+def get_temperatures_from_range(startTime:datetime, endTime:datetime) -> List[Tuple[float, float, float, datetime]]:
+    query = """
+    SELECT temperature, outsidetemperature, feelsliketemperature, datetime FROM
+        openweathertemperatures
+    WHERE 
+        datetime
+    BETWEEN %s AND %s
+    """
 
-print(datetime.now().replace(microsecond=0))
+    cur.execute(query, (startTime, endTime))
+    return cur.fetchall()
+
+
+
+# print(datetime.now().replace(microsecond=0))
