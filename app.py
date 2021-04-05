@@ -1,5 +1,5 @@
 from bokeh_all_time import get_bokeh_all_graph
-from bokehgraphmaker import *
+from bokehgraphmaker import get_bokeh_graph_from_range
 from datetime import date, datetime, timedelta
 from flask import Flask, render_template, url_for, copy_current_request_context, jsonify
 from flask_cors import CORS
@@ -54,7 +54,7 @@ def get_last_day():
 @app.route('/')
 def index():
     #only by sending this page first will the client be connected to the socketio instance
-    return "index"
+    return render_template("base.html")
 
 
 @app.route('/getgraph/<startTime>/<endTime>')
@@ -66,9 +66,9 @@ def getGraphAsHtml(startTime: str, endTime: str):
     formattedEndTime = datetime.strptime(endTime, '%Y-%m-%dT%H:%M')
     
     rangeOfTemperatures = get_temperatures_from_range(formattedStartTime, formattedEndTime)    
-    graphJson = get_bokeh_graph_from_range(rangeOfTemperatures)
+    jsonBody = get_bokeh_graph_from_range(rangeOfTemperatures)
 
-    return json.dumps(graphJson)
+    return jsonBody
 
 
 @socketio.on('connect', namespace='/test')
@@ -77,8 +77,8 @@ def test_connect():
 
     print('Client connected')
 
-    graph = make_plot_from_range(get_last_day())
-    socketio.emit('newGraph', {'graph': graph}, namespace = '/test')
+    # graph = make_plot_from_range(get_last_day())
+    # socketio.emit('newGraph', {'graph': graph}, namespace = '/test')
 
     outsideFeelsLikeTemperature = get_outside_feels_like_temperature()
     socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature}, namespace='/test')
@@ -95,4 +95,4 @@ def test_disconnect():
     print('Client disconnected')
 
 if __name__ == '__main__':
-    socketio.run(app)
+    socketio.run(app, host='0.0.0.0', port=5000)

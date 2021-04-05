@@ -5,7 +5,8 @@ from bokeh.io import export_png, curdoc
 from bokeh.themes import Theme
 from bokeh.models.tools import HoverTool
 from bokeh.models import Legend, LegendItem
-from bokeh.embed import json_item
+from bokeh.embed import json_item, components
+import json
 curdoc().theme = Theme(filename="themes/redTheme.yml")
 
 def get_bokeh_graph_from_range(temperaturesHistory: list):
@@ -50,5 +51,5 @@ def get_bokeh_graph_from_range(temperaturesHistory: list):
     p.legend.label_text_color = '#F6AA1C'
 
     # show(p)
-
-    return json_item(p, 'myplot')
+    script, div = components(p)
+    return json.dumps({'script': script, 'div': div})
