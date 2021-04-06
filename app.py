@@ -19,7 +19,7 @@ app.config['SECRET_KEY'] = 'secret!'
 app.config['DEBUG'] = True
 
 
-socketio = SocketIO(app, async_mode=None, logger=False, engineio_logger=False)
+socketio = SocketIO(app, async_mode=None, logger=True, engineio_logger=False, cors_allowed_origins='*')
 
 sensor = W1ThermSensor() 
 thread = Thread()
@@ -33,11 +33,16 @@ def time_and_temp_background_task():
         temperature = sensor.get_temperature()
         timeNow = datetime.now().time().replace(microsecond=0)
         
-        socketio.emit('newTemperature', {'temperature' : temperature}, namespace='/test')
-        socketio.emit('newTime', {'time' : str(timeNow)}, namespace='/test')
+        socketio.emit('newTemperature', {'temperature' : temperature})
+        # socketio.emit('newTime', {'time' : str(timeNow)}, namespace='/test')
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temperature().minute):
-            add_temperatures_to_temperatures_database(temperature, datetime.now().replace(microsecond=0), get_outside_temp(), get_outside_feels_like_temperature()) 
+            add_temperatures_to_temperatures_database(temperature, datetime.now().replace(microsecond=0), get_outside_temp(), get_outside_feels_like_temperature())
+            outsideFeelsLikeTemperature = get_outside_feels_like_temperature()
+            # socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature}, namespace='/test')
+
+            outsideTemp = get_outside_temp()
+            # socketio.emit('newoutsideTemp', {'outsideTemp' :  outsideTemp}, namespace='/test') 
         socketio.sleep(0.5)
 
 
@@ -86,10 +91,10 @@ def test_connect():
     # socketio.emit('newGraph', {'graph': graph}, namespace = '/test')
 
     outsideFeelsLikeTemperature = get_outside_feels_like_temperature()
-    socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature}, namespace='/test')
+    # socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature}, namespace='/test')
 
     outsideTemp = get_outside_temp()
-    socketio.emit('newoutsideTemp', {'outsideTemp' :  outsideTemp}, namespace='/test')
+    # socketio.emit('newoutsideTemp', {'outsideTemp' :  outsideTemp}, namespace='/test')
 
     if not thread.isAlive():
         thread = socketio.start_background_task(time_and_temp_background_task)

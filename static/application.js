@@ -4,9 +4,9 @@ $(document).ready(function() {
     var graph_received = [];
     
 
-    socket.on('newTemperature', function(msg) {  
-        $('#temp-log').html(msg.temperature.toString());
-    })
+    // socket.on('newTemperature', function(msg) {  
+    //     $('#temp-log').html(msg.temperature.toString());
+    // })
 
     socket.on('newTime', function(msg) {
         $('#time-log').html(msg.time.toString());
