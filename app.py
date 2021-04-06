@@ -70,6 +70,11 @@ def getGraphAsHtml(startTime: str, endTime: str):
 
     return jsonBody
 
+@app.route('/getTemp')
+def getTemp():
+    temp = sensor.get_temperature() 
+    return jsonify(temp)
+
 
 @socketio.on('connect', namespace='/test')
 def test_connect():
