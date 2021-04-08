@@ -34,15 +34,15 @@ def time_and_temp_background_task():
         timeNow = datetime.now().time().replace(microsecond=0)
         
         socketio.emit('newTemperature', {'temperature' : temperature})
-        # socketio.emit('newTime', {'time' : str(timeNow)}, namespace='/test')
+        socketio.emit('newTime', {'time' : str(timeNow)})
         
         if (timeNow.minute % 10 == 0) and (timeNow.minute != get_time_of_most_recent_temperature().minute):
             add_temperatures_to_temperatures_database(temperature, datetime.now().replace(microsecond=0), get_outside_temp(), get_outside_feels_like_temperature())
-            outsideFeelsLikeTemperature = get_outside_feels_like_temperature()
-            # socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature}, namespace='/test')
+            outsideFeelsLikeTemperature = str(get_outside_feels_like_temperature())
+            socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature})
 
-            outsideTemp = get_outside_temp()
-            # socketio.emit('newoutsideTemp', {'outsideTemp' :  outsideTemp}, namespace='/test') 
+            outsideTemp = str(get_outside_temp())
+            socketio.emit('newOutsideTemp', {'outsideTemp' :  outsideTemp}) 
         socketio.sleep(0.5)
 
 
@@ -81,7 +81,7 @@ def getTemp():
     return jsonify(temp)
 
 
-@socketio.on('connect', namespace='/test')
+@socketio.on('connect')
 def test_connect():
     global thread
 
@@ -90,11 +90,11 @@ def test_connect():
     # graph = make_plot_from_range(get_last_day())
     # socketio.emit('newGraph', {'graph': graph}, namespace = '/test')
 
-    outsideFeelsLikeTemperature = get_outside_feels_like_temperature()
-    # socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature}, namespace='/test')
+    outsideFeelsLikeTemperature = str(get_outside_feels_like_temperature())
+    socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature})
 
-    outsideTemp = get_outside_temp()
-    # socketio.emit('newoutsideTemp', {'outsideTemp' :  outsideTemp}, namespace='/test')
+    outsideTemp = str(get_outside_temp())
+    socketio.emit('newOutsideTemp', {'outsideTemp' :  outsideTemp})
 
     if not thread.isAlive():
         thread = socketio.start_background_task(time_and_temp_background_task)
