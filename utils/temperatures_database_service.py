@@ -81,6 +81,7 @@ def get_temperatures_from_range(startTime:datetime, endTime:datetime) -> List[Tu
     cur.execute(query, (startTime, endTime))
     return cur.fetchall()
 
-
+# yesterday = datetime.now() - timedelta(days=1)
+# print(get_temperatures_from_range(yesterday, datetime.now()))
 
 # print(datetime.now().replace(microsecond=0))

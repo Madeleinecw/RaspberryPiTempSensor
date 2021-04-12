@@ -8,9 +8,9 @@ from graphmaker import make_plot_from_range
 import json
 from threading import Thread, Event
 from time import sleep
-from utils.database_service import add_temperature, get_time_of_most_recent_temperature, get_all_temperatures, get_all_timestamps
+from utils.database_service import add_temperature, get_all_temperatures, get_all_timestamps
 from utils.open_weather_map_service import get_outside_temp, get_outside_feels_like_temperature
-from utils.temperatures_database_service import add_temperatures_to_temperatures_database, get_temperatures_from_range
+from utils.temperatures_database_service import add_temperatures_to_temperatures_database, get_temperatures_from_range, get_time_of_most_recent_temperature
 from w1thermsensor import W1ThermSensor
 
 app = Flask(__name__)
@@ -40,7 +40,7 @@ def time_and_temp_background_task():
             add_temperatures_to_temperatures_database(temperature, datetime.now().replace(microsecond=0), get_outside_temp(), get_outside_feels_like_temperature())
             outsideFeelsLikeTemperature = str(get_outside_feels_like_temperature())
             socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature})
-
+            socketio.emit('updated', {'updated': outsideFeelsLikeTemperature})
             outsideTemp = str(get_outside_temp())
             socketio.emit('newOutsideTemp', {'outsideTemp' :  outsideTemp}) 
         socketio.sleep(0.5)
@@ -71,8 +71,7 @@ def getGraphAsHtml(startTime: str, endTime: str):
     formattedEndTime = datetime.strptime(endTime, '%Y-%m-%dT%H:%M')
     
     rangeOfTemperatures = get_temperatures_from_range(formattedStartTime, formattedEndTime)    
-    jsonBody = get_bokeh_graph_from_range(rangeOfTemperatures)
-
+    jsonBody = jsonify(rangeOfTemperatures)
     return jsonBody
 
 @app.route('/getTemp')
