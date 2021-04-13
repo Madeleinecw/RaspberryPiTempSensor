@@ -1,14 +1,10 @@
-from bokeh_all_time import get_bokeh_all_graph
-from bokehgraphmaker import get_bokeh_graph_from_range
 from datetime import date, datetime, timedelta
 from flask import Flask, render_template, url_for, copy_current_request_context, jsonify
 from flask_cors import CORS
 from flask_socketio import SocketIO, emit
-from graphmaker import make_plot_from_range
 import json
 from threading import Thread, Event
 from time import sleep
-from utils.database_service import add_temperature, get_all_temperatures, get_all_timestamps
 from utils.open_weather_map_service import get_outside_temp, get_outside_feels_like_temperature
 from utils.temperatures_database_service import add_temperatures_to_temperatures_database, get_temperatures_from_range, get_time_of_most_recent_temperature
 from w1thermsensor import W1ThermSensor
