@@ -28,7 +28,7 @@ def time_and_temp_background_task():
     while not thread_stop_event.isSet():
         temperature = sensor.get_temperature()
         timeNow = datetime.now().time().replace(microsecond=0)
-        update = str(get_time_of_most_recent_temperature())
+        
         
         socketio.emit('newTemperature', {'temperature' : temperature})
         socketio.emit('newTime', {'time' : str(timeNow)})
@@ -37,6 +37,7 @@ def time_and_temp_background_task():
             add_temperatures_to_temperatures_database(temperature, datetime.now().replace(microsecond=0), get_outside_temp(), get_outside_feels_like_temperature())
             outsideFeelsLikeTemperature = str(get_outside_feels_like_temperature())
             socketio.emit('newOutsideFeelsLike', {'outsideFeelsLikeTemperature': outsideFeelsLikeTemperature})
+            update = str(get_time_of_most_recent_temperature())
             socketio.emit('updated', {'updated': update})
             outsideTemp = str(get_outside_temp())
             socketio.emit('newOutsideTemp', {'outsideTemp' :  outsideTemp}) 
